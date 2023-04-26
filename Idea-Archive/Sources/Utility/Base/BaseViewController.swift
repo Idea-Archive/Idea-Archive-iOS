@@ -18,7 +18,6 @@ class BaseViewController: UIViewController {
         setLayoutSubviews()
     }
     
-    
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -36,12 +35,10 @@ class BaseViewController: UIViewController {
             self.view.backgroundColor = .white
         }
     }
-    
     func setup() {}
     func addView() {}
     func setLayout() {}
     func setLayoutSubviews() {}
     func bind() {}
 }
-
 
