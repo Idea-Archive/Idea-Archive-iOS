@@ -8,7 +8,6 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         setupBackgroundIfNotSet()
-        setup()
         addView()
         setup()
         setLayout()
@@ -19,7 +18,7 @@ class BaseViewController: UIViewController {
         setLayoutSubviews()
     }
     
-    // MARK: - Deinitalizer
+    
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -42,7 +41,6 @@ class BaseViewController: UIViewController {
     func addView() {}
     func setLayout() {}
     func setLayoutSubviews() {}
-    
     func bind() {}
 }
 
