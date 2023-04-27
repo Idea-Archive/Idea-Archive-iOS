@@ -15,6 +15,7 @@ class BaseViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         setLayoutSubviews()
     }
     
