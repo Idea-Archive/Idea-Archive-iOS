@@ -12,6 +12,7 @@
 		786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1429F81C9200228885 /* BaseViewController.swift */; };
 		786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1929F81C9300228885 /* Assets.xcassets */; };
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
+		78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		786DCB1929F81C9300228885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786DCB1C29F81C9300228885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78EC4ADE2A00056A002645B3 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				786DCB2E29F81F1F00228885 /* Base */,
+				78EC4ADD2A00055C002645B3 /* UIColor */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -150,6 +153,14 @@
 				786DCB1429F81C9200228885 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		78EC4ADD2A00055C002645B3 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				78EC4ADE2A00056A002645B3 /* HexColor.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
+				78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
 			);
