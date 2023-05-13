@@ -12,6 +12,8 @@
 		786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1429F81C9200228885 /* BaseViewController.swift */; };
 		786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1929F81C9300228885 /* Assets.xcassets */; };
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
+		78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */; };
+		78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */; };
 		78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		786DCB1929F81C9300228885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786DCB1C29F81C9300228885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
+		78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		78EC4ADE2A00056A002645B3 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,7 @@
 		786DCB2929F81E8100228885 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				78B664482A0E87D000B8C68C /* Sources */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -153,6 +158,23 @@
 				786DCB1429F81C9200228885 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		78B664482A0E87D000B8C68C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				78B664492A0E89C900B8C68C /* TextField */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		78B664492A0E89C900B8C68C /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */,
+				78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		78EC4ADD2A00055C002645B3 /* UIColor */ = {
@@ -233,9 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
 				78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
+				78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
