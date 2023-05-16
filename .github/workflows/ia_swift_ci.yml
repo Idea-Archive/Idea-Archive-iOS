@@ -1,0 +1,18 @@
+
+name: ia-swift-ci
+on:
+  push:
+    branches: [ "main" ] 
+  pull_request:
+    branches: [ "*" ] 
+
+jobs:
+  build:  
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3  
+    - name: Build Xcode 
+      run: |
+        xcodebuild clean test -project Idea-Archive.xcodeproj \
+        -scheme Idea-Archive \
+        -destination 'platform=iOS Simulator,name=iPhone 13,OS=latest'
