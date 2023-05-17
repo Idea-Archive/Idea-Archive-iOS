@@ -7,12 +7,27 @@ on:
     branches: [ "*" ] 
 
 jobs:
-  build:  
+  cleanTest:  
     runs-on: macos-latest
+    env:
+        PROJECT: App/App.xcodeproj
+        SCHEME: Default
+        DESTINATION: platform=iOS Simulator,name=iPod touch (7th generation),OS=latest
+        CONFIGURATION: Debug
     steps:
     - uses: actions/checkout@v3  
-    - name: Build Xcode 
-      run: |
-        xcodebuild clean test -project Idea-Archive.xcodeproj \
-        -scheme Idea-Archive \
-        -destination 'platform=iOS Simulator,name=iPhone 13,OS=latest'
+    
+    - name : Select XCode Version
+      run : sudo xcode-select -switch /Applications/Xcode.app
+    
+    - name : Install xcpretty
+      run : sudo gem install xcpretty
+
+    - name: Xcodebuild Clean Test
+      run: xcodebuild clean test
+           -project "$PROJECT"
+           -scheme "$SCHEME"
+           -configuration "$CONFIGURATION"
+           -destination "$DESTINATION"
+           -enableCodeCoverage YES | xcpretty --color
+           -showBuildTimingSummary
