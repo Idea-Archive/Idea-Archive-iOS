@@ -77,18 +77,15 @@ final class MainVC: BaseViewController {
     
     // MARK: - UI
     override func addView() {
-        view.addSubview(filterStackView)
+        view.addSubViews(filterStackView, settingStackView,newWritingButton,postListLabel)
+        
         filterStackView.addArrangedSubview(entireFilterButton)
         filterStackView.addArrangedSubview(ideaFilterButton)
         filterStackView.addArrangedSubview(feedbackFilterButton)
         filterStackView.addArrangedSubview(jobOpeningFilterButton)
         
-        view.addSubview(settingStackView)
         settingStackView.addArrangedSubview(searchButton)
         settingStackView.addArrangedSubview(myPageButton)
-        
-        view.addSubview(newWritingButton)
-        view.addSubview(postListLabel)
     }
     
     override func setLayout() {
