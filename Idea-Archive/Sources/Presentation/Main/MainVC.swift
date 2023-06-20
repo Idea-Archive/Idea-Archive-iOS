@@ -70,9 +70,27 @@ final class MainVC: BaseViewController {
         $0.layer.cornerRadius = 30
     }
     
+    // MARK: - Func
+    
+    @objc func clickNewWritingButton() {
+        let writeDown = WriteDownVC()
+        navigationController?.pushViewController(writeDown, animated: true)
+    }
+    
+    func addTargets() {
+        newWritingButton.addTarget(self, action: #selector(clickNewWritingButton), for: .touchUpInside)
+    }
+    
     // MARK: - OverrideFunc
     override func setup() {
         self.view.backgroundColor = UIColor(rgb: 0xF2F2F2)
+        addTargets()
+        
+        let filterLeftBarItem = UIBarButtonItem(customView: filterStackView)
+        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = filterLeftBarItem
+
+        let settingRightBarItem = UIBarButtonItem(customView: settingStackView)
+        self.navigationController?.navigationBar.topItem?.rightBarButtonItem = settingRightBarItem
     }
     
     // MARK: - UI
@@ -89,18 +107,8 @@ final class MainVC: BaseViewController {
     }
     
     override func setLayout() {
-        filterStackView.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(16)
-            $0.leading.equalToSuperview().inset(20)
-        }
-        
-        settingStackView.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(20)
-            $0.trailing.equalToSuperview().inset(20)
-        }
-        
         postListLabel.snp.makeConstraints {
-            $0.top.equalTo(filterStackView.snp.bottom).inset(-68)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(68)
             $0.leading.equalToSuperview().inset(28)
         }
         
