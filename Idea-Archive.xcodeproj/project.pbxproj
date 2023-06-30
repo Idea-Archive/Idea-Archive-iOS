@@ -351,36 +351,12 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
-		D02568052A1BB5C200238978 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				D02568062A1BB5D200238978 /* MainVC.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		D04776202A36458800FA33CC /* UIButton */ = {
-			isa = PBXGroup;
-			children = (
-				D04776212A3645A900FA33CC /* setImage.swift */,
-			);
-			path = UIButton;
-			sourceTree = "<group>";
-		};
 		D0B98F322A406AEB006CAA6C /* WriteDown */ = {
 			isa = PBXGroup;
 			children = (
 				D0B98F332A406B17006CAA6C /* WriteDownVC.swift */,
 			);
 			path = WriteDown;
-			sourceTree = "<group>";
-		};
-		D0B98F352A406DFC006CAA6C /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				D0B98F362A406E0C006CAA6C /* addSubViews.swift */,
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
