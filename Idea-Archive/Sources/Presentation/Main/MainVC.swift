@@ -3,7 +3,7 @@ import UIKit
 final class MainVC: BaseViewController {
     // MARK: - Properties
     
-    private let filterStackView = UIStackView().then {
+    private let categoryStackView = UIStackView().then {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.axis = .horizontal
         $0.spacing = 8
@@ -11,28 +11,28 @@ final class MainVC: BaseViewController {
         $0.alignment = .fill
     }
     
-    private let entireFilterButton = UIButton().then {
+    private let entireCategoryButton = UIButton().then {
         $0.setTitle("전체", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x999999), for: .normal)
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
     }
     
-    private let ideaFilterButton = UIButton().then {
+    private let ideaCategoryButton = UIButton().then {
         $0.setTitle("아이디어", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x999999), for: .normal)
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
     }
     
-    private let feedbackFilterButton = UIButton().then {
+    private let feedbackCategoryButton = UIButton().then {
         $0.setTitle("피드백", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x999999), for: .normal)
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
     }
     
-    private let jobOpeningFilterButton = UIButton().then {
+    private let jobOpeningCategoryButton = UIButton().then {
         $0.setTitle("구인", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x999999), for: .normal)
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -86,8 +86,8 @@ final class MainVC: BaseViewController {
         self.view.backgroundColor = UIColor(rgb: 0xF2F2F2)
         addTargets()
         
-        let filterLeftBarItem = UIBarButtonItem(customView: filterStackView)
-        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = filterLeftBarItem
+        let categoryLeftBarItem = UIBarButtonItem(customView: categoryStackView)
+        self.navigationController?.navigationBar.topItem?.leftBarButtonItem = categoryLeftBarItem
 
         let settingRightBarItem = UIBarButtonItem(customView: settingStackView)
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem = settingRightBarItem
@@ -95,12 +95,12 @@ final class MainVC: BaseViewController {
     
     // MARK: - UI
     override func addView() {
-        view.addSubViews(filterStackView, settingStackView,newWritingButton,postListLabel)
+        view.addSubViews(categoryStackView, settingStackView,newWritingButton,postListLabel)
         
-        filterStackView.addArrangedSubview(entireFilterButton)
-        filterStackView.addArrangedSubview(ideaFilterButton)
-        filterStackView.addArrangedSubview(feedbackFilterButton)
-        filterStackView.addArrangedSubview(jobOpeningFilterButton)
+        categoryStackView.addArrangedSubview(entireCategoryButton)
+        categoryStackView.addArrangedSubview(ideaCategoryButton)
+        categoryStackView.addArrangedSubview(feedbackCategoryButton)
+        categoryStackView.addArrangedSubview(jobOpeningCategoryButton)
         
         settingStackView.addArrangedSubview(searchButton)
         settingStackView.addArrangedSubview(myPageButton)
