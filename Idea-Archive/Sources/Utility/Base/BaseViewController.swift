@@ -6,7 +6,7 @@ class BaseViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupBackgroundIfNotSet()
         addView()
         setup()
@@ -36,8 +36,10 @@ class BaseViewController: UIViewController {
             self.view.backgroundColor = .white
         }
     }
-    func setup() {}
+    
+    
     func addView() {}
+    func setup() {}
     func setLayout() {}
     func setLayoutSubviews() {}
     func bind() {}
