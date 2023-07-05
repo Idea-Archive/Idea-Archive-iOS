@@ -19,7 +19,7 @@ public final class SecureTextField: UITextField {
         layer.cornerRadius = 10
         backgroundColor = UIColor(rgb: 0xF1F1F5)
         font = .I_A(size: 14, family: .regular)
-        setPlaceholderColor(UIColor(rgb: 0x99999))
+        setPlaceholderColor(UIColor(rgb: 0x999999))
         
         isSecureTextEntry = true
         setPasswordToggleButtonImage()
