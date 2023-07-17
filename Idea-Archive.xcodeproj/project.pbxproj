@@ -12,6 +12,10 @@
 		786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1429F81C9200228885 /* BaseViewController.swift */; };
 		786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1929F81C9300228885 /* Assets.xcassets */; };
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
+		786FB7FA2A1122C000BD3386 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB7F92A1122C000BD3386 /* Font.swift */; };
+		786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */; };
+		78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */; };
+		78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */; };
 		78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,18 @@
 		786DCB1929F81C9300228885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786DCB1C29F81C9300228885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786FB7F92A1122C000BD3386 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		786FB7FB2A11236600BD3386 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		786FB7FC2A11236600BD3386 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		786FB7FD2A11236600BD3386 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		786FB7FE2A11236600BD3386 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		786FB7FF2A11236600BD3386 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		786FB8002A11236600BD3386 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		786FB8012A11236600BD3386 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		786FB8022A11236600BD3386 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPlaceholderColor.swift"; sourceTree = "<group>"; };
+		78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
+		78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		78EC4ADE2A00056A002645B3 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +127,7 @@
 		786DCB2929F81E8100228885 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				78B664482A0E87D000B8C68C /* Sources */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -118,6 +135,7 @@
 		786DCB2A29F81E9200228885 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				786FB8032A11258700BD3386 /* Extension */,
 				786DCB2E29F81F1F00228885 /* Base */,
 				78EC4ADD2A00055C002645B3 /* UIColor */,
 			);
@@ -143,6 +161,14 @@
 		786DCB2D29F81EF700228885 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				786FB7FE2A11236600BD3386 /* Pretendard-Bold.otf */,
+				786FB7FB2A11236600BD3386 /* Pretendard-ExtraBold.otf */,
+				786FB7FD2A11236600BD3386 /* Pretendard-ExtraLight.otf */,
+				786FB8012A11236600BD3386 /* Pretendard-Light.otf */,
+				786FB8002A11236600BD3386 /* Pretendard-Medium.otf */,
+				786FB7FF2A11236600BD3386 /* Pretendard-Regular.otf */,
+				786FB7FC2A11236600BD3386 /* Pretendard-SemiBold.otf */,
+				786FB8022A11236600BD3386 /* Pretendard-Thin.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -153,6 +179,40 @@
 				786DCB1429F81C9200228885 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		786FB7F82A1122B800BD3386 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				786FB7F92A1122C000BD3386 /* Font.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		786FB8032A11258700BD3386 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		78B664482A0E87D000B8C68C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				786FB7F82A1122B800BD3386 /* Font */,
+				78B664492A0E89C900B8C68C /* TextField */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		78B664492A0E89C900B8C68C /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */,
+				78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		78EC4ADD2A00055C002645B3 /* UIColor */ = {
@@ -233,9 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
+				786FB7FA2A1122C000BD3386 /* Font.swift in Sources */,
+				786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */,
 				78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
+				78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
