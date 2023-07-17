@@ -13,16 +13,12 @@
 		786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1929F81C9300228885 /* Assets.xcassets */; };
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
 		78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* HexColor.swift */; };
-<<<<<<< Updated upstream
-=======
 		D02568072A1BB5D200238978 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02568062A1BB5D200238978 /* MainVC.swift */; };
 		D02F8F742A3F0F29000C5972 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D02F8F732A3F0F29000C5972 /* SnapKit */; };
 		D02F8F772A3F0F36000C5972 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D02F8F762A3F0F36000C5972 /* Then */; };
 		D04776222A3645A900FA33CC /* setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04776212A3645A900FA33CC /* setImage.swift */; };
-		D06474522A4E59A400254B11 /* ChooseMajorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06474512A4E59A400254B11 /* ChooseMajorVC.swift */; };
 		D0B98F342A406B17006CAA6C /* WriteDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98F332A406B17006CAA6C /* WriteDownVC.swift */; };
 		D0B98F372A406E0C006CAA6C /* addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98F362A406E0C006CAA6C /* addSubViews.swift */; };
->>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +30,10 @@
 		786DCB1C29F81C9300228885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78EC4ADE2A00056A002645B3 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-=======
 		D02568062A1BB5D200238978 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D04776212A3645A900FA33CC /* setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setImage.swift; sourceTree = "<group>"; };
-		D06474512A4E59A400254B11 /* ChooseMajorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMajorVC.swift; sourceTree = "<group>"; };
 		D0B98F332A406B17006CAA6C /* WriteDownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDownVC.swift; sourceTree = "<group>"; };
 		D0B98F362A406E0C006CAA6C /* addSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubViews.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +114,8 @@
 		786DCB2829F81E6D00228885 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-=======
-				D06474502A4E595C00254B11 /* ChooseMajor */,
 				D0B98F322A406AEB006CAA6C /* WriteDown */,
 				D02568052A1BB5C200238978 /* Main */,
->>>>>>> Stashed changes
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -187,8 +175,6 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-=======
 		D02568052A1BB5C200238978 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,14 +189,6 @@
 				D04776212A3645A900FA33CC /* setImage.swift */,
 			);
 			path = UIButton;
-			sourceTree = "<group>";
-		};
-		D06474502A4E595C00254B11 /* ChooseMajor */ = {
-			isa = PBXGroup;
-			children = (
-				D06474512A4E59A400254B11 /* ChooseMajorVC.swift */,
-			);
-			path = ChooseMajor;
 			sourceTree = "<group>";
 		};
 		D0B98F322A406AEB006CAA6C /* WriteDown */ = {
@@ -229,7 +207,6 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,11 +281,7 @@
 				78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
-<<<<<<< Updated upstream
-=======
 				D02568072A1BB5D200238978 /* MainVC.swift in Sources */,
-				D06474522A4E59A400254B11 /* ChooseMajorVC.swift in Sources */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
