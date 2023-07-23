@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 78015C4A2A30CAEA00737055 /* AEOTPTextField */; };
+		78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */; };
+		78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4E2A31CB7200737055 /* OTPTextField.swift */; };
+		785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF12A25AB8800186DDA /* SnapKit */; };
+		785BBEF52A25AB9600186DDA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF42A25AB9600186DDA /* Then */; };
+		785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEF72A25ABC200186DDA /* LoginViewController.swift */; };
+		785BBEFB2A25ABFF00186DDA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEFA2A25ABFF00186DDA /* Color.swift */; };
+		785BBEFE2A25AC3C00186DDA /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEFD2A25AC3C00186DDA /* TitleLabel.swift */; };
+		785BBF002A25AC4F00186DDA /* SmallTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEFF2A25AC4F00186DDA /* SmallTitleLabel.swift */; };
+		785BBF022A25AC6000186DDA /* LargeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF012A25AC6000186DDA /* LargeTitleLabel.swift */; };
+		785BBF052A25AC8400186DDA /* NextStepButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF042A25AC8400186DDA /* NextStepButton.swift */; };
+		785BBF072A25AC9600186DDA /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF062A25AC9600186DDA /* AdditionalButton.swift */; };
+		785BBF0A2A25ACFD00186DDA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF092A25ACFD00186DDA /* SignupViewController.swift */; };
+		785BBF0C2A25AD2F00186DDA /* SuccessAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF0B2A25AD2F00186DDA /* SuccessAuthViewController.swift */; };
+		785BBF0E2A25AD4600186DDA /* FailAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF0D2A25AD4600186DDA /* FailAuthViewController.swift */; };
+		785BBF112A25AD6700186DDA /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF102A25AD6700186DDA /* FindPasswordViewController.swift */; };
+		785BBF132A25AD8100186DDA /* MakeNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBF122A25AD8100186DDA /* MakeNewPasswordViewController.swift */; };
+		785BBF1E2A25E9FE00186DDA /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF152A25E9FE00186DDA /* Pretendard-ExtraBold.otf */; };
+		785BBF1F2A25E9FE00186DDA /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF162A25E9FE00186DDA /* Pretendard-ExtraLight.otf */; };
+		785BBF202A25E9FE00186DDA /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF172A25E9FE00186DDA /* Pretendard-Medium.otf */; };
+		785BBF212A25E9FE00186DDA /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF182A25E9FE00186DDA /* Pretendard-Bold.otf */; };
+		785BBF222A25E9FE00186DDA /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF192A25E9FE00186DDA /* Pretendard-Regular.otf */; };
+		785BBF232A25E9FE00186DDA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1A2A25E9FE00186DDA /* Pretendard-SemiBold.otf */; };
+		785BBF242A25E9FE00186DDA /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1B2A25E9FE00186DDA /* Pretendard-Thin.otf */; };
+		785BBF252A25E9FE00186DDA /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1C2A25E9FE00186DDA /* Pretendard-Black.otf */; };
+		785BBF262A25E9FE00186DDA /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1D2A25E9FE00186DDA /* Pretendard-Light.otf */; };
 		786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1029F81C9200228885 /* AppDelegate.swift */; };
 		786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1229F81C9200228885 /* SceneDelegate.swift */; };
 		786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1429F81C9200228885 /* BaseViewController.swift */; };
@@ -14,12 +40,36 @@
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
 		786FB7FA2A1122C000BD3386 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB7F92A1122C000BD3386 /* Font.swift */; };
 		786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */; };
+		78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 78848A8B2A343E06001588AA /* RxKeyboard */; };
 		78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */; };
 		78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */; };
-		78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* HexColor.swift */; };
+		78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
+		78015C4E2A31CB7200737055 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		785BBEF72A25ABC200186DDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		785BBEFA2A25ABFF00186DDA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		785BBEFD2A25AC3C00186DDA /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		785BBEFF2A25AC4F00186DDA /* SmallTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTitleLabel.swift; sourceTree = "<group>"; };
+		785BBF012A25AC6000186DDA /* LargeTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleLabel.swift; sourceTree = "<group>"; };
+		785BBF042A25AC8400186DDA /* NextStepButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStepButton.swift; sourceTree = "<group>"; };
+		785BBF062A25AC9600186DDA /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
+		785BBF092A25ACFD00186DDA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		785BBF0B2A25AD2F00186DDA /* SuccessAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAuthViewController.swift; sourceTree = "<group>"; };
+		785BBF0D2A25AD4600186DDA /* FailAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailAuthViewController.swift; sourceTree = "<group>"; };
+		785BBF102A25AD6700186DDA /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		785BBF122A25AD8100186DDA /* MakeNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNewPasswordViewController.swift; sourceTree = "<group>"; };
+		785BBF152A25E9FE00186DDA /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		785BBF162A25E9FE00186DDA /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		785BBF172A25E9FE00186DDA /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		785BBF182A25E9FE00186DDA /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		785BBF192A25E9FE00186DDA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		785BBF1A2A25E9FE00186DDA /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		785BBF1B2A25E9FE00186DDA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		785BBF1C2A25E9FE00186DDA /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		785BBF1D2A25E9FE00186DDA /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		786DCB0D29F81C9200228885 /* Idea-Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Idea-Archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786DCB1029F81C9200228885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786DCB1229F81C9200228885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,18 +78,10 @@
 		786DCB1C29F81C9300228885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786FB7F92A1122C000BD3386 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		786FB7FB2A11236600BD3386 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
-		786FB7FC2A11236600BD3386 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		786FB7FD2A11236600BD3386 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
-		786FB7FE2A11236600BD3386 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
-		786FB7FF2A11236600BD3386 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		786FB8002A11236600BD3386 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		786FB8012A11236600BD3386 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
-		786FB8022A11236600BD3386 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPlaceholderColor.swift"; sourceTree = "<group>"; };
 		78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
 		78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
-		78EC4ADE2A00056A002645B3 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +89,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */,
+				78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */,
+				785BBEF52A25AB9600186DDA /* Then in Frameworks */,
+				78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		785BBEF62A25ABB500186DDA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				785BBEF72A25ABC200186DDA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		785BBEF92A25ABF300186DDA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				785BBEFA2A25ABFF00186DDA /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		785BBEFC2A25AC0800186DDA /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				785BBEFD2A25AC3C00186DDA /* TitleLabel.swift */,
+				785BBF012A25AC6000186DDA /* LargeTitleLabel.swift */,
+				785BBEFF2A25AC4F00186DDA /* SmallTitleLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		785BBF032A25AC7200186DDA /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				785BBF042A25AC8400186DDA /* NextStepButton.swift */,
+				785BBF062A25AC9600186DDA /* AdditionalButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		785BBF082A25ACEE00186DDA /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				785BBF092A25ACFD00186DDA /* SignupViewController.swift */,
+				78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */,
+				785BBF0B2A25AD2F00186DDA /* SuccessAuthViewController.swift */,
+				785BBF0D2A25AD4600186DDA /* FailAuthViewController.swift */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		785BBF0F2A25AD5700186DDA /* MakePassword */ = {
+			isa = PBXGroup;
+			children = (
+				785BBF122A25AD8100186DDA /* MakeNewPasswordViewController.swift */,
+			);
+			path = MakePassword;
+			sourceTree = "<group>";
+		};
+		785BBF142A25E92200186DDA /* Pretendard */ = {
+			isa = PBXGroup;
+			children = (
+				785BBF1C2A25E9FE00186DDA /* Pretendard-Black.otf */,
+				785BBF182A25E9FE00186DDA /* Pretendard-Bold.otf */,
+				785BBF152A25E9FE00186DDA /* Pretendard-ExtraBold.otf */,
+				785BBF162A25E9FE00186DDA /* Pretendard-ExtraLight.otf */,
+				785BBF1D2A25E9FE00186DDA /* Pretendard-Light.otf */,
+				785BBF172A25E9FE00186DDA /* Pretendard-Medium.otf */,
+				785BBF192A25E9FE00186DDA /* Pretendard-Regular.otf */,
+				785BBF1A2A25E9FE00186DDA /* Pretendard-SemiBold.otf */,
+				785BBF1B2A25E9FE00186DDA /* Pretendard-Thin.otf */,
+			);
+			path = Pretendard;
+			sourceTree = "<group>";
+		};
 		786DCB0429F81C9200228885 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +236,10 @@
 		786DCB2829F81E6D00228885 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				785BBEF62A25ABB500186DDA /* Login */,
+				785BBF082A25ACEE00186DDA /* Signin */,
+				786E0FF82A2B097F00F73173 /* FindPassword */,
+				785BBF0F2A25AD5700186DDA /* MakePassword */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -161,14 +281,7 @@
 		786DCB2D29F81EF700228885 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				786FB7FE2A11236600BD3386 /* Pretendard-Bold.otf */,
-				786FB7FB2A11236600BD3386 /* Pretendard-ExtraBold.otf */,
-				786FB7FD2A11236600BD3386 /* Pretendard-ExtraLight.otf */,
-				786FB8012A11236600BD3386 /* Pretendard-Light.otf */,
-				786FB8002A11236600BD3386 /* Pretendard-Medium.otf */,
-				786FB7FF2A11236600BD3386 /* Pretendard-Regular.otf */,
-				786FB7FC2A11236600BD3386 /* Pretendard-SemiBold.otf */,
-				786FB8022A11236600BD3386 /* Pretendard-Thin.otf */,
+				785BBF142A25E92200186DDA /* Pretendard */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -179,6 +292,14 @@
 				786DCB1429F81C9200228885 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		786E0FF82A2B097F00F73173 /* FindPassword */ = {
+			isa = PBXGroup;
+			children = (
+				785BBF102A25AD6700186DDA /* FindPasswordViewController.swift */,
+			);
+			path = FindPassword;
 			sourceTree = "<group>";
 		};
 		786FB7F82A1122B800BD3386 /* Font */ = {
@@ -200,8 +321,11 @@
 		78B664482A0E87D000B8C68C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				785BBEF92A25ABF300186DDA /* Color */,
 				786FB7F82A1122B800BD3386 /* Font */,
+				785BBEFC2A25AC0800186DDA /* Label */,
 				78B664492A0E89C900B8C68C /* TextField */,
+				785BBF032A25AC7200186DDA /* Button */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -211,6 +335,7 @@
 			children = (
 				78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */,
 				78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */,
+				78015C4E2A31CB7200737055 /* OTPTextField.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -218,7 +343,7 @@
 		78EC4ADD2A00055C002645B3 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				78EC4ADE2A00056A002645B3 /* HexColor.swift */,
+				78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -239,6 +364,12 @@
 			dependencies = (
 			);
 			name = "Idea-Archive";
+			packageProductDependencies = (
+				785BBEF12A25AB8800186DDA /* SnapKit */,
+				785BBEF42A25AB9600186DDA /* Then */,
+				78015C4A2A30CAEA00737055 /* AEOTPTextField */,
+				78848A8B2A343E06001588AA /* RxKeyboard */,
+			);
 			productName = "Idea-Archive";
 			productReference = 786DCB0D29F81C9200228885 /* Idea-Archive.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +398,12 @@
 				Base,
 			);
 			mainGroup = 786DCB0429F81C9200228885;
+			packageReferences = (
+				785BBEF02A25AB8800186DDA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				785BBEF32A25AB9500186DDA /* XCRemoteSwiftPackageReference "Then" */,
+				78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */,
+				78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+			);
 			productRefGroup = 786DCB0E29F81C9200228885 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,7 +419,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */,
+				785BBF212A25E9FE00186DDA /* Pretendard-Bold.otf in Resources */,
+				785BBF202A25E9FE00186DDA /* Pretendard-Medium.otf in Resources */,
+				785BBF242A25E9FE00186DDA /* Pretendard-Thin.otf in Resources */,
+				785BBF252A25E9FE00186DDA /* Pretendard-Black.otf in Resources */,
+				785BBF262A25E9FE00186DDA /* Pretendard-Light.otf in Resources */,
+				785BBF232A25E9FE00186DDA /* Pretendard-SemiBold.otf in Resources */,
 				786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */,
+				785BBF222A25E9FE00186DDA /* Pretendard-Regular.otf in Resources */,
+				785BBF1F2A25E9FE00186DDA /* Pretendard-ExtraLight.otf in Resources */,
+				785BBF1E2A25E9FE00186DDA /* Pretendard-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +439,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785BBF132A25AD8100186DDA /* MakeNewPasswordViewController.swift in Sources */,
+				785BBF0C2A25AD2F00186DDA /* SuccessAuthViewController.swift in Sources */,
+				78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */,
+				785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */,
+				785BBF022A25AC6000186DDA /* LargeTitleLabel.swift in Sources */,
 				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
+				78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */,
+				785BBEFB2A25ABFF00186DDA /* Color.swift in Sources */,
+				785BBF112A25AD6700186DDA /* FindPasswordViewController.swift in Sources */,
+				785BBEFE2A25AC3C00186DDA /* TitleLabel.swift in Sources */,
 				786FB7FA2A1122C000BD3386 /* Font.swift in Sources */,
 				786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */,
-				78EC4ADF2A00056A002645B3 /* HexColor.swift in Sources */,
+				78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */,
+				785BBF072A25AC9600186DDA /* AdditionalButton.swift in Sources */,
+				785BBF0A2A25ACFD00186DDA /* SignupViewController.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
 				78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */,
+				785BBF0E2A25AD4600186DDA /* FailAuthViewController.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
+				785BBF052A25AC8400186DDA /* NextStepButton.swift in Sources */,
+				785BBF002A25AC4F00186DDA /* SmallTitleLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +668,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/junseopark0331/junseopark-AEOTPTextField.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		785BBEF02A25AB8800186DDA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		785BBEF32A25AB9500186DDA /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78015C4A2A30CAEA00737055 /* AEOTPTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */;
+			productName = AEOTPTextField;
+		};
+		785BBEF12A25AB8800186DDA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 785BBEF02A25AB8800186DDA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		785BBEF42A25AB9600186DDA /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 785BBEF32A25AB9500186DDA /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		78848A8B2A343E06001588AA /* RxKeyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */;
+			productName = RxKeyboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 786DCB0529F81C9200228885 /* Project object */;
 }
