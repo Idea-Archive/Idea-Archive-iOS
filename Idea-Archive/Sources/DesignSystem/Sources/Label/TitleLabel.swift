@@ -17,5 +17,4 @@ public final class TitleLabel: UILabel{
         textAlignment = .center
         font = .I_A(size: 40, family: .bold)
     }
-    
 }

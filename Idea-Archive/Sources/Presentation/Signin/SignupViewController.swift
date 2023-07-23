@@ -28,6 +28,7 @@ final class SignupViewController: BaseViewController {
         $0.setTitle("확인", for: .normal)
         $0.isEnabled = false
         $0.backgroundColor = UIColor(rgb: 0x999999)
+        $0.addTarget(self, action: #selector(confirmationButtonTapped), for: .touchUpInside)
     }
     
     private let memberLabel = SmallTitleLabel().then{
@@ -101,6 +102,11 @@ final class SignupViewController: BaseViewController {
         }
     }
     
+    @objc func confirmationButtonTapped(_ sender: UIButton){
+        let vc = CertificationNumberViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @objc func loginButtonTapped(_ sender: UIButton){
         self.navigationController?.popToRootViewController(animated: true)
     }
@@ -149,7 +155,6 @@ extension SignupViewController: UITextFieldDelegate{
             confirmationButton.backgroundColor = UIColor(rgb: 0x999999)
             confirmationButton.isEnabled = false
         }
-
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -162,4 +167,3 @@ extension SignupViewController: UITextFieldDelegate{
         return true
     }
 }
-

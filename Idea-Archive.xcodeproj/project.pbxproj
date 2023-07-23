@@ -10,7 +10,6 @@
 		78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 78015C4A2A30CAEA00737055 /* AEOTPTextField */; };
 		78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */; };
 		78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4E2A31CB7200737055 /* OTPTextField.swift */; };
-		783005AD2A373557005C6FA1 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783005AC2A373557005C6FA1 /* test.swift */; };
 		785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF12A25AB8800186DDA /* SnapKit */; };
 		785BBEF52A25AB9600186DDA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF42A25AB9600186DDA /* Then */; };
 		785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEF72A25ABC200186DDA /* LoginViewController.swift */; };
@@ -51,7 +50,6 @@
 /* Begin PBXFileReference section */
 		78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
 		78015C4E2A31CB7200737055 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
-		783005AC2A373557005C6FA1 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		785BBEF72A25ABC200186DDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		785BBEFA2A25ABFF00186DDA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		785BBEFD2A25AC3C00186DDA /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */,
 				785BBF0B2A25AD2F00186DDA /* SuccessAuthViewController.swift */,
 				785BBF0D2A25AD4600186DDA /* FailAuthViewController.swift */,
-				783005AC2A373557005C6FA1 /* test.swift */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -488,7 +485,6 @@
 				785BBEFB2A25ABFF00186DDA /* Color.swift in Sources */,
 				785BBF112A25AD6700186DDA /* FindPasswordViewController.swift in Sources */,
 				785BBEFE2A25AC3C00186DDA /* TitleLabel.swift in Sources */,
-				783005AD2A373557005C6FA1 /* test.swift in Sources */,
 				786FB7FA2A1122C000BD3386 /* Font.swift in Sources */,
 				786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */,
 				78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */,
