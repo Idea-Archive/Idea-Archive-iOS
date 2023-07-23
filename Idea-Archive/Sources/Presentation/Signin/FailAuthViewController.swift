@@ -14,7 +14,7 @@ final class FailAuthViewController: BaseViewController {
         $0.textAlignment = .center
         $0.font = .I_A(size: 24, family: .semiBold)
     }
-
+    
     private let additionalFailAuthorizeLabel = SmallTitleLabel().then{
         $0.text = "다시 시도해주세요."
         $0.textColor = UIColor(rgb: 0x999999)
@@ -26,20 +26,15 @@ final class FailAuthViewController: BaseViewController {
         $0.addTarget(FailAuthViewController.self, action: #selector(goBackToLoginButtonTapped), for: .touchUpInside)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        
+    @objc func goBackToLoginButtonTapped(_ sender: UIButton){
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    override func addView() {
         view.addSubview(failAuthorizeImage)
         view.addSubview(failAuthorizeLabel)
         view.addSubview(additionalFailAuthorizeLabel)
         view.addSubview(goBackToLoginButton)
-        
-        setLayout()
-    }
-    
-    @objc func goBackToLoginButtonTapped(_ sender: UIButton){
-           navigationController?.popToRootViewController(animated: true)
     }
     
     override func setLayout(){

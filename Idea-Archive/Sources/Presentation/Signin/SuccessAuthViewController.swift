@@ -23,7 +23,7 @@ final class SuccessAuthViewController: BaseViewController {
     private let confirmationButton = NextStepButton().then{
         $0.setTitle("로그인으로 돌아가기", for: .normal)
         $0.backgroundColor = UIColor(rgb: 0x42CC89)
-        $0.addTarget(SuccessAuthViewController.self, action: #selector(gotoLoginButtonTapped), for: .touchUpInside)
+        $0.addTarget(self, action: #selector(gotoLoginButtonTapped), for: .touchUpInside)
     }
     
     override func addView() {
@@ -34,19 +34,19 @@ final class SuccessAuthViewController: BaseViewController {
     }
     
     override func setLayout(){
-        successImage.snp.makeConstraints{
+        self.successImage.snp.makeConstraints{
             $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(102)
             $0.centerX.equalTo(view.snp.centerX)
         }
-        successAuthorizeLabel.snp.makeConstraints{
+        self.successAuthorizeLabel.snp.makeConstraints{
             $0.top.equalTo(successImage.snp.bottom).offset(32)
             $0.centerX.equalTo(view.snp.centerX)
         }
-        additionalSuccessAuthorizeLabel.snp.makeConstraints{
+        self.additionalSuccessAuthorizeLabel.snp.makeConstraints{
             $0.top.equalTo(successAuthorizeLabel.snp.bottom).offset(12)
             $0.centerX.equalTo(view.snp.centerX)
         }
-        confirmationButton.snp.makeConstraints{
+        self.confirmationButton.snp.makeConstraints{
             $0.height.equalTo(52)
             $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(18)
             $0.leading.trailing.equalTo(self.view).inset(28)
@@ -57,4 +57,3 @@ final class SuccessAuthViewController: BaseViewController {
         navigationController?.popToRootViewController(animated: true)
     }
 }
-

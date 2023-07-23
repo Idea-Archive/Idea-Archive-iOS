@@ -79,7 +79,6 @@ final class LoginViewController: BaseViewController {
         
     }
     
-    
     override func addView() {
         view.addSubview(loginLabel)
         view.addSubview(idTextField)

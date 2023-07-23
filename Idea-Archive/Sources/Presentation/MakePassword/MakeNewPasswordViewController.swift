@@ -114,5 +114,3 @@ extension MakeNewPasswordViewController: UITextFieldDelegate{
         return true
     }
 }
-
-

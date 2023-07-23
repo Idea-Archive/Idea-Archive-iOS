@@ -39,7 +39,7 @@ final class CertificationNumberViewController: BaseViewController {
     override func setup() {
         certificationNumberTextField.otpDelegate = self
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpOutputBinding()
@@ -85,32 +85,10 @@ final class CertificationNumberViewController: BaseViewController {
                 
                 self.confirmationButton.snp.updateConstraints {
                     $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(keyboardVisibleHeight)
-                        }
+                }
             })
             .disposed(by: disposeBag)
-        
     }
-    
-    
-//    func raiseKeyboardWithButton(keyboardChangedHeight: CGFloat, constraintBetweenBtnAndKeyboard: NSLayoutConstraint) {
-//        DispatchQueue.main.async {
-//            UIView.animate(withDuration: 0.23, animations: {
-//
-//                var safeAreaBottomLength = self.view.safeAreaInsets.bottom
-//
-//                if keyboardChangedHeight == 0 { // 버튼이 가라앉는 버그 대응
-//                    safeAreaBottomLength = 0
-//                }
-//
-//                constraintBetweenBtnAndKeyboard.constant = keyboardChangedHeight - safeAreaBottomLength
-//                //                + Constants.ComponentStyle.intervalSizeBetweenButtonAndKeyboard
-//
-//                constraintBetweenBtnAndKeyboard.constant = 24
-//
-//                self.view.layoutIfNeeded()
-//            })
-//        }
-//    }
 }
 
 extension CertificationNumberViewController: AEOTPTextFieldDelegate, UITextFieldDelegate {
@@ -126,28 +104,18 @@ extension CertificationNumberViewController: AEOTPTextFieldDelegate, UITextField
     
     func didUserFinishEnter(the code: String) {
         print(code)
-        
     }
     
-    //    func textFieldDidChangeSelection(_ textField: AEOTPTextField) {
-    //        if certificationNumberTextField.text!.count > 0{
-    //            confirmationButton.backgroundColor = UIColor(rgb: 0x42CC89)
-    //            confirmationButton.isEnabled = true
-    //        }
-    //        else{
-    //            confirmationButton.backgroundColor = UIColor(rgb: 0xA9A9A9)
-    //            confirmationButton.isEnabled = false
-    //        }
-    //    }
-    
+    func textFieldDidChangeSelection(_ textField: AEOTPTextField) {
+        print(certificationNumberTextField.text?.count)
+        
+        if certificationNumberTextField.text!.count > 3{
+            confirmationButton.backgroundColor = UIColor(rgb: 0x42CC89)
+            confirmationButton.isEnabled = true
+        }
+        else{
+            confirmationButton.backgroundColor = UIColor(rgb: 0xA9A9A9)
+            confirmationButton.isEnabled = false
+        }
+    }
 }
-
-//extension Reactive where Base: CertificationNumberViewController {
-//
-//    var keyboardHeightChanged: Binder<CGFloat> {
-//        return Binder(self.base) { vc, height in
-//            vc.raiseKeyboardWithButton(keyboardChangedHeight: height, constraintBetweenBtnAndKeyboard: vc.btnVerifyBottomConstraint)
-//        }
-//    }
-//}
-
