@@ -33,6 +33,7 @@
 		785BBF242A25E9FE00186DDA /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1B2A25E9FE00186DDA /* Pretendard-Thin.otf */; };
 		785BBF252A25E9FE00186DDA /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1C2A25E9FE00186DDA /* Pretendard-Black.otf */; };
 		785BBF262A25E9FE00186DDA /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1D2A25E9FE00186DDA /* Pretendard-Light.otf */; };
+		786799362A700EEB002E76B0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 786799352A700EEB002E76B0 /* IQKeyboardManagerSwift */; };
 		786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1029F81C9200228885 /* AppDelegate.swift */; };
 		786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1229F81C9200228885 /* SceneDelegate.swift */; };
 		786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1429F81C9200228885 /* BaseViewController.swift */; };
@@ -93,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786799362A700EEB002E76B0 /* IQKeyboardManagerSwift in Frameworks */,
 				785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */,
 				78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */,
 				785BBEF52A25AB9600186DDA /* Then in Frameworks */,
@@ -391,6 +393,7 @@
 				785BBEF42A25AB9600186DDA /* Then */,
 				78015C4A2A30CAEA00737055 /* AEOTPTextField */,
 				78848A8B2A343E06001588AA /* RxKeyboard */,
+				786799352A700EEB002E76B0 /* IQKeyboardManagerSwift */,
 			);
 			productName = "Idea-Archive";
 			productReference = 786DCB0D29F81C9200228885 /* Idea-Archive.app */;
@@ -425,6 +428,7 @@
 				785BBEF32A25AB9500186DDA /* XCRemoteSwiftPackageReference "Then" */,
 				78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */,
 				78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				786799342A700EEB002E76B0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 786DCB0E29F81C9200228885 /* Products */;
 			projectDirPath = "";
@@ -718,6 +722,14 @@
 				kind = branch;
 			};
 		};
+		786799342A700EEB002E76B0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard";
@@ -743,6 +755,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 785BBEF32A25AB9500186DDA /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		786799352A700EEB002E76B0 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 786799342A700EEB002E76B0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 		78848A8B2A343E06001588AA /* RxKeyboard */ = {
 			isa = XCSwiftPackageProductDependency;
