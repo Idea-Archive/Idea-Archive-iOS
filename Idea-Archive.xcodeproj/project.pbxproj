@@ -107,6 +107,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781BD2782A77311A00118B99 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				785DFE082A7693C500867D64 /* BaseURL.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		781BD2792A77311F00118B99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		781BD27A2A77313300118B99 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		781BD27B2A77314600118B99 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		785BBEF62A25ABB500186DDA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +209,10 @@
 		785DFE072A7693A100867D64 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				785DFE082A7693C500867D64 /* BaseURL.swift */,
+				781BD2782A77311A00118B99 /* General */,
+				781BD2792A77311F00118B99 /* Model */,
+				781BD27A2A77313300118B99 /* Request */,
+				781BD27B2A77314600118B99 /* Services */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -205,8 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				786DCB2429F81E2100228885 /* Support */,
-				786DCB2529F81E2A00228885 /* Sources */,
 				786DCB2629F81E3200228885 /* Resources */,
+				786DCB2529F81E2A00228885 /* Sources */,
 			);
 			path = "Idea-Archive";
 			sourceTree = "<group>";
