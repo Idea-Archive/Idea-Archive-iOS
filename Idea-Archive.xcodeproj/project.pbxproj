@@ -10,6 +10,7 @@
 		78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 78015C4A2A30CAEA00737055 /* AEOTPTextField */; };
 		78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */; };
 		78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4E2A31CB7200737055 /* OTPTextField.swift */; };
+		781BD27E2A7732DC00118B99 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 781BD27D2A7732DC00118B99 /* Moya */; };
 		785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF12A25AB8800186DDA /* SnapKit */; };
 		785BBEF52A25AB9600186DDA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF42A25AB9600186DDA /* Then */; };
 		785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEF72A25ABC200186DDA /* LoginViewController.swift */; };
@@ -98,6 +99,7 @@
 			files = (
 				786799362A700EEB002E76B0 /* IQKeyboardManagerSwift in Frameworks */,
 				785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */,
+				781BD27E2A7732DC00118B99 /* Moya in Frameworks */,
 				78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */,
 				785BBEF52A25AB9600186DDA /* Then in Frameworks */,
 				78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */,
@@ -437,6 +439,7 @@
 				78015C4A2A30CAEA00737055 /* AEOTPTextField */,
 				78848A8B2A343E06001588AA /* RxKeyboard */,
 				786799352A700EEB002E76B0 /* IQKeyboardManagerSwift */,
+				781BD27D2A7732DC00118B99 /* Moya */,
 			);
 			productName = "Idea-Archive";
 			productReference = 786DCB0D29F81C9200228885 /* Idea-Archive.app */;
@@ -472,6 +475,7 @@
 				78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */,
 				78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */,
 				786799342A700EEB002E76B0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				781BD27C2A7732DC00118B99 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 786DCB0E29F81C9200228885 /* Products */;
 			projectDirPath = "";
@@ -750,6 +754,14 @@
 				kind = branch;
 			};
 		};
+		781BD27C2A7732DC00118B99 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 		785BBEF02A25AB8800186DDA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -789,6 +801,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */;
 			productName = AEOTPTextField;
+		};
+		781BD27D2A7732DC00118B99 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 781BD27C2A7732DC00118B99 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 		785BBEF12A25AB8800186DDA /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
