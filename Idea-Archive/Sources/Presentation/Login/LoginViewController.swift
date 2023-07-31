@@ -68,15 +68,18 @@ final class LoginViewController: BaseViewController {
         $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
     
+    override func setup() {
+        self.navigationController?.navigationBar.tintColor = UIColor(rgb: 0x000000)
+        self.navigationController?.navigationBar.topItem?.title = ""
+        idTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.tintColor = UIColor(rgb: 0x000000)
-        self.navigationController?.navigationBar.topItem?.title = ""
-        
-        idTextField.delegate = self
-        passwordTextField.delegate = self
-        
+        print(Bundle.main.apiKey)
     }
     
     override func addView() {

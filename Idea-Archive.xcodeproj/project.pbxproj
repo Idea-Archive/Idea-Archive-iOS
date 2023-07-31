@@ -11,6 +11,11 @@
 		78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */; };
 		78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4E2A31CB7200737055 /* OTPTextField.swift */; };
 		781BD27E2A7732DC00118B99 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 781BD27D2A7732DC00118B99 /* Moya */; };
+		781BD2812A7739C300118B99 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD2802A7739C300118B99 /* AuthServices.swift */; };
+		781BD2842A773C8600118B99 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD2832A773C8600118B99 /* AuthRequest.swift */; };
+		781BD2872A77406200118B99 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD2862A77406200118B99 /* Auth.swift */; };
+		781BD2892A774F4B00118B99 /* BaseURLInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 781BD2882A774F4B00118B99 /* BaseURLInfo.plist */; };
+		781BD28D2A7750D200118B99 /* Idea-Archive++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */; };
 		785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF12A25AB8800186DDA /* SnapKit */; };
 		785BBEF52A25AB9600186DDA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF42A25AB9600186DDA /* Then */; };
 		785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEF72A25ABC200186DDA /* LoginViewController.swift */; };
@@ -54,6 +59,11 @@
 /* Begin PBXFileReference section */
 		78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
 		78015C4E2A31CB7200737055 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		781BD2802A7739C300118B99 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		781BD2832A773C8600118B99 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		781BD2862A77406200118B99 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		781BD2882A774F4B00118B99 /* BaseURLInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BaseURLInfo.plist; sourceTree = "<group>"; };
+		781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Idea-Archive++Bundle.swift"; sourceTree = "<group>"; };
 		785BBEF72A25ABC200186DDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		785BBEFA2A25ABFF00186DDA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		785BBEFD2A25AC3C00186DDA /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -113,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				785DFE082A7693C500867D64 /* BaseURL.swift */,
+				781BD2882A774F4B00118B99 /* BaseURLInfo.plist */,
+				781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -120,6 +132,7 @@
 		781BD2792A77311F00118B99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				781BD2852A77405B00118B99 /* Auth */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +140,7 @@
 		781BD27A2A77313300118B99 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				781BD2822A773C2C00118B99 /* Auth */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -134,8 +148,33 @@
 		781BD27B2A77314600118B99 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				781BD27F2A7739B700118B99 /* Auth */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		781BD27F2A7739B700118B99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2802A7739C300118B99 /* AuthServices.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		781BD2822A773C2C00118B99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2832A773C8600118B99 /* AuthRequest.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		781BD2852A77405B00118B99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2862A77406200118B99 /* Auth.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		785BBEF62A25ABB500186DDA /* Login */ = {
@@ -212,9 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				781BD2782A77311A00118B99 /* General */,
-				781BD2792A77311F00118B99 /* Model */,
-				781BD27A2A77313300118B99 /* Request */,
 				781BD27B2A77314600118B99 /* Services */,
+				781BD27A2A77313300118B99 /* Request */,
+				781BD2792A77311F00118B99 /* Model */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -491,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781BD2892A774F4B00118B99 /* BaseURLInfo.plist in Resources */,
 				786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */,
 				785BBF212A25E9FE00186DDA /* Pretendard-Bold.otf in Resources */,
 				785BBF202A25E9FE00186DDA /* Pretendard-Medium.otf in Resources */,
@@ -514,14 +554,17 @@
 			files = (
 				785BBF132A25AD8100186DDA /* MakeNewPasswordViewController.swift in Sources */,
 				785BBF0C2A25AD2F00186DDA /* SuccessAuthViewController.swift in Sources */,
+				781BD28D2A7750D200118B99 /* Idea-Archive++Bundle.swift in Sources */,
 				78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */,
 				785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */,
 				785BBF022A25AC6000186DDA /* LargeTitleLabel.swift in Sources */,
 				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
+				781BD2812A7739C300118B99 /* AuthServices.swift in Sources */,
 				78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */,
 				785BBEFB2A25ABFF00186DDA /* Color.swift in Sources */,
 				785BBF112A25AD6700186DDA /* FindPasswordViewController.swift in Sources */,
+				781BD2872A77406200118B99 /* Auth.swift in Sources */,
 				785BBEFE2A25AC3C00186DDA /* TitleLabel.swift in Sources */,
 				786FB7FA2A1122C000BD3386 /* Font.swift in Sources */,
 				786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */,
@@ -532,6 +575,7 @@
 				785DFE092A7693C500867D64 /* BaseURL.swift in Sources */,
 				785BBF0A2A25ACFD00186DDA /* SignupViewController.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
+				781BD2842A773C8600118B99 /* AuthRequest.swift in Sources */,
 				78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */,
 				785BBF0E2A25AD4600186DDA /* FailAuthViewController.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
