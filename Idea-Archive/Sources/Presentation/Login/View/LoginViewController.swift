@@ -65,7 +65,7 @@ final class LoginViewController: BaseViewController {
     private lazy var gotoSignupButton = AdditionalButton().then{
         $0.setTitle("회원가입", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x191919), for: .normal)
-        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
+//        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
     
     override func setup() {
@@ -79,7 +79,8 @@ final class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(Bundle.main.apiKey)
+        LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
+        
     }
     
     override func addView() {
@@ -166,6 +167,11 @@ final class LoginViewController: BaseViewController {
         let vc = SignupViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+//    @objc func signupButtonTapped(_ sender: UIButton){
+//        let vc = SignupViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
 }
 
 extension LoginViewController: UITextFieldDelegate{

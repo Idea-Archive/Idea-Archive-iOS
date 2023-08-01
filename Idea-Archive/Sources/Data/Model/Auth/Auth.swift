@@ -6,10 +6,8 @@ struct LoginResponse: Codable {
     let expiredAt: String
 }
 
-//struct LogoutModel: Codable {
-//    let header: String
-//}
-//
-//struct LoginResponse: Codable {
-//    let accessToken: String
-//}
+struct RefreshTokenResponse: Codable {
+    let accessToken: String
+    let refreshToken: String
+    let expiredAt: String
+}
