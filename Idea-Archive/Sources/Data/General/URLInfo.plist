@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Base-API-KEY</key>
+	<string>https://ia-alb-1944207904.ap-northeast-2.elb.amazonaws.com/</string>
+	<key>Test-API-KEY</key>
+	<string></string>
+</dict>
+</plist>

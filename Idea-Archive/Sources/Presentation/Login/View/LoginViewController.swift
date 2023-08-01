@@ -65,17 +65,21 @@ final class LoginViewController: BaseViewController {
     private lazy var gotoSignupButton = AdditionalButton().then{
         $0.setTitle("회원가입", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x191919), for: .normal)
-        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
+//        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
+    
+    override func setup() {
+        self.navigationController?.navigationBar.tintColor = UIColor(rgb: 0x000000)
+        self.navigationController?.navigationBar.topItem?.title = ""
+        idTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.tintColor = UIColor(rgb: 0x000000)
-        self.navigationController?.navigationBar.topItem?.title = ""
-        
-        idTextField.delegate = self
-        passwordTextField.delegate = self
+        LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
         
     }
     
@@ -163,6 +167,11 @@ final class LoginViewController: BaseViewController {
         let vc = SignupViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+//    @objc func signupButtonTapped(_ sender: UIButton){
+//        let vc = SignupViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
 }
 
 extension LoginViewController: UITextFieldDelegate{

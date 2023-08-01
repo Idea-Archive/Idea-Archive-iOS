@@ -10,6 +10,12 @@
 		78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 78015C4A2A30CAEA00737055 /* AEOTPTextField */; };
 		78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */; };
 		78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78015C4E2A31CB7200737055 /* OTPTextField.swift */; };
+		781BD27E2A7732DC00118B99 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 781BD27D2A7732DC00118B99 /* Moya */; };
+		781BD2812A7739C300118B99 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD2802A7739C300118B99 /* AuthServices.swift */; };
+		781BD2842A773C8600118B99 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD2832A773C8600118B99 /* AuthRequest.swift */; };
+		781BD2872A77406200118B99 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD2862A77406200118B99 /* Auth.swift */; };
+		781BD2892A774F4B00118B99 /* URLInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 781BD2882A774F4B00118B99 /* URLInfo.plist */; };
+		781BD28D2A7750D200118B99 /* Idea-Archive++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */; };
 		785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF12A25AB8800186DDA /* SnapKit */; };
 		785BBEF52A25AB9600186DDA /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 785BBEF42A25AB9600186DDA /* Then */; };
 		785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BBEF72A25ABC200186DDA /* LoginViewController.swift */; };
@@ -33,6 +39,7 @@
 		785BBF242A25E9FE00186DDA /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1B2A25E9FE00186DDA /* Pretendard-Thin.otf */; };
 		785BBF252A25E9FE00186DDA /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1C2A25E9FE00186DDA /* Pretendard-Black.otf */; };
 		785BBF262A25E9FE00186DDA /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 785BBF1D2A25E9FE00186DDA /* Pretendard-Light.otf */; };
+		785DFE092A7693C500867D64 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DFE082A7693C500867D64 /* BaseURL.swift */; };
 		786799362A700EEB002E76B0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 786799352A700EEB002E76B0 /* IQKeyboardManagerSwift */; };
 		786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1029F81C9200228885 /* AppDelegate.swift */; };
 		786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786DCB1229F81C9200228885 /* SceneDelegate.swift */; };
@@ -41,6 +48,8 @@
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
 		786FB7FA2A1122C000BD3386 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB7F92A1122C000BD3386 /* Font.swift */; };
 		786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */; };
+		787211F62A777FD9008B2998 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F52A777FD9008B2998 /* LoginViewModel.swift */; };
+		787211F92A778179008B2998 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F82A778179008B2998 /* KeyChainManager.swift */; };
 		78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 78848A8B2A343E06001588AA /* RxKeyboard */; };
 		78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */; };
 		78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */; };
@@ -52,6 +61,11 @@
 /* Begin PBXFileReference section */
 		78015C4C2A31BE6C00737055 /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
 		78015C4E2A31CB7200737055 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		781BD2802A7739C300118B99 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		781BD2832A773C8600118B99 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		781BD2862A77406200118B99 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		781BD2882A774F4B00118B99 /* URLInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = URLInfo.plist; sourceTree = "<group>"; };
+		781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Idea-Archive++Bundle.swift"; sourceTree = "<group>"; };
 		785BBEF72A25ABC200186DDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		785BBEFA2A25ABFF00186DDA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		785BBEFD2A25AC3C00186DDA /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -73,6 +87,7 @@
 		785BBF1B2A25E9FE00186DDA /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		785BBF1C2A25E9FE00186DDA /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		785BBF1D2A25E9FE00186DDA /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		785DFE082A7693C500867D64 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		786DCB0D29F81C9200228885 /* Idea-Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Idea-Archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786DCB1029F81C9200228885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786DCB1229F81C9200228885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +97,8 @@
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786FB7F92A1122C000BD3386 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPlaceholderColor.swift"; sourceTree = "<group>"; };
+		787211F52A777FD9008B2998 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		787211F82A778179008B2998 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
 		78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
@@ -96,6 +113,7 @@
 			files = (
 				786799362A700EEB002E76B0 /* IQKeyboardManagerSwift in Frameworks */,
 				785BBEF22A25AB8800186DDA /* SnapKit in Frameworks */,
+				781BD27E2A7732DC00118B99 /* Moya in Frameworks */,
 				78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */,
 				785BBEF52A25AB9600186DDA /* Then in Frameworks */,
 				78015C4B2A30CAEA00737055 /* AEOTPTextField in Frameworks */,
@@ -105,10 +123,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781BD2782A77311A00118B99 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				785DFE082A7693C500867D64 /* BaseURL.swift */,
+				781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */,
+				781BD2882A774F4B00118B99 /* URLInfo.plist */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		781BD2792A77311F00118B99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				787211F72A77816C008B2998 /* KeyChain */,
+				781BD2852A77405B00118B99 /* Auth */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		781BD27A2A77313300118B99 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2822A773C2C00118B99 /* Auth */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		781BD27B2A77314600118B99 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				781BD27F2A7739B700118B99 /* Auth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		781BD27F2A7739B700118B99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2802A7739C300118B99 /* AuthServices.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		781BD2822A773C2C00118B99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2832A773C8600118B99 /* AuthRequest.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		781BD2852A77405B00118B99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2862A77406200118B99 /* Auth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		785BBEF62A25ABB500186DDA /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				785BBEF72A25ABC200186DDA /* LoginViewController.swift */,
+				787211F32A777FBB008B2998 /* View */,
+				787211F42A777FC1008B2998 /* ViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -175,6 +253,17 @@
 			path = Pretendard;
 			sourceTree = "<group>";
 		};
+		785DFE072A7693A100867D64 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				781BD2782A77311A00118B99 /* General */,
+				781BD27B2A77314600118B99 /* Services */,
+				781BD27A2A77313300118B99 /* Request */,
+				781BD2792A77311F00118B99 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		786DCB0429F81C9200228885 = {
 			isa = PBXGroup;
 			children = (
@@ -195,8 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				786DCB2429F81E2100228885 /* Support */,
-				786DCB2529F81E2A00228885 /* Sources */,
 				786DCB2629F81E3200228885 /* Resources */,
+				786DCB2529F81E2A00228885 /* Sources */,
 			);
 			path = "Idea-Archive";
 			sourceTree = "<group>";
@@ -213,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				786DCB2729F81E5C00228885 /* Application */,
+				785DFE072A7693A100867D64 /* Data */,
 				786DCB2829F81E6D00228885 /* Presentation */,
 				786DCB2929F81E8100228885 /* DesignSystem */,
 				786DCB2A29F81E9200228885 /* Utility */,
@@ -326,6 +416,30 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		787211F32A777FBB008B2998 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				785BBEF72A25ABC200186DDA /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		787211F42A777FC1008B2998 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				787211F52A777FD9008B2998 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		787211F72A77816C008B2998 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				787211F82A778179008B2998 /* KeyChainManager.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
 		78B664482A0E87D000B8C68C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +508,7 @@
 				78015C4A2A30CAEA00737055 /* AEOTPTextField */,
 				78848A8B2A343E06001588AA /* RxKeyboard */,
 				786799352A700EEB002E76B0 /* IQKeyboardManagerSwift */,
+				781BD27D2A7732DC00118B99 /* Moya */,
 			);
 			productName = "Idea-Archive";
 			productReference = 786DCB0D29F81C9200228885 /* Idea-Archive.app */;
@@ -429,6 +544,7 @@
 				78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */,
 				78848A8A2A343E06001588AA /* XCRemoteSwiftPackageReference "RxKeyboard" */,
 				786799342A700EEB002E76B0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				781BD27C2A7732DC00118B99 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 786DCB0E29F81C9200228885 /* Products */;
 			projectDirPath = "";
@@ -444,6 +560,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				781BD2892A774F4B00118B99 /* URLInfo.plist in Resources */,
 				786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */,
 				785BBF212A25E9FE00186DDA /* Pretendard-Bold.otf in Resources */,
 				785BBF202A25E9FE00186DDA /* Pretendard-Medium.otf in Resources */,
@@ -467,14 +584,19 @@
 			files = (
 				785BBF132A25AD8100186DDA /* MakeNewPasswordViewController.swift in Sources */,
 				785BBF0C2A25AD2F00186DDA /* SuccessAuthViewController.swift in Sources */,
+				781BD28D2A7750D200118B99 /* Idea-Archive++Bundle.swift in Sources */,
 				78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */,
 				785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */,
 				785BBF022A25AC6000186DDA /* LargeTitleLabel.swift in Sources */,
 				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
+				787211F62A777FD9008B2998 /* LoginViewModel.swift in Sources */,
+				781BD2812A7739C300118B99 /* AuthServices.swift in Sources */,
 				78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */,
 				785BBEFB2A25ABFF00186DDA /* Color.swift in Sources */,
 				785BBF112A25AD6700186DDA /* FindPasswordViewController.swift in Sources */,
+				781BD2872A77406200118B99 /* Auth.swift in Sources */,
+				787211F92A778179008B2998 /* KeyChainManager.swift in Sources */,
 				785BBEFE2A25AC3C00186DDA /* TitleLabel.swift in Sources */,
 				786FB7FA2A1122C000BD3386 /* Font.swift in Sources */,
 				786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */,
@@ -482,8 +604,10 @@
 				D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */,
 				D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */,
 				785BBF072A25AC9600186DDA /* AdditionalButton.swift in Sources */,
+				785DFE092A7693C500867D64 /* BaseURL.swift in Sources */,
 				785BBF0A2A25ACFD00186DDA /* SignupViewController.swift in Sources */,
 				786DCB1129F81C9200228885 /* AppDelegate.swift in Sources */,
+				781BD2842A773C8600118B99 /* AuthRequest.swift in Sources */,
 				78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */,
 				785BBF0E2A25AD4600186DDA /* FailAuthViewController.swift in Sources */,
 				786DCB1329F81C9200228885 /* SceneDelegate.swift in Sources */,
@@ -668,6 +792,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "class.Idea-Archive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,6 +829,14 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+			};
+		};
+		781BD27C2A7732DC00118B99 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
 			};
 		};
 		785BBEF02A25AB8800186DDA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
@@ -745,6 +878,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 78015C492A30CAEA00737055 /* XCRemoteSwiftPackageReference "junseopark-AEOTPTextField" */;
 			productName = AEOTPTextField;
+		};
+		781BD27D2A7732DC00118B99 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 781BD27C2A7732DC00118B99 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 		785BBEF12A25AB8800186DDA /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

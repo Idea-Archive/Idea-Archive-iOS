@@ -1,4 +1,5 @@
 import UIKit
+import Moya
 
 class BaseViewController: UIViewController {
     // MARK: - Properties
@@ -7,9 +8,9 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
         setupBackgroundIfNotSet()
         addView()
-        setup()
         setLayout()
         bind()
     }
