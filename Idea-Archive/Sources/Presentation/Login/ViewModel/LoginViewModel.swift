@@ -34,6 +34,7 @@ extension LoginViewModel {
                 
                 switch statusCode{
                 case 200..<300:
+                    print(self.authData.accessToken)
                     print("성공")
                 case 400:
                     print("Login failed with status code: \(statusCode)")
