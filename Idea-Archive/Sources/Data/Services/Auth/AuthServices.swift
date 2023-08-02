@@ -54,21 +54,17 @@ extension AuthServices: TargetType {
                 "password" : param.password
             ]
             return .requestJSONEncodable(params)
-        case .logout(param: let param):
-            let params : [String: String] = [
-                "Authorization" : param.accessToken
-            ]
-            return .requestJSONEncodable(params)
-        case .refreshToken(param: let param):
-            let params : [String: String] = [
-                "RefreshToken" : param.refreshToken
-            ]
-            return .requestJSONEncodable(params)
+        default:
+            return .requestPlain
         }
     }
     
     var headers: [String : String]? {
         switch self {
+        case .logout(let param):
+            return ["Authorization": param.accessToken]
+        case .refreshToken(let param):
+            return ["RefreshToken": param.refreshToken]
         default:
             return ["Content-Type": "application/json"]
         }
