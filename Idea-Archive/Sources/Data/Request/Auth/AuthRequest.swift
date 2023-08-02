@@ -1,6 +1,6 @@
 import Foundation
 
-struct SignupRequest: Codable {
+struct SignupRequest: Encodable {
     let email: String
     let password: String
     let name: String
@@ -12,7 +12,7 @@ struct SignupRequest: Codable {
     }
 }
 
-struct LoginRequest: Codable {
+struct LoginRequest: Encodable {
     let email: String
     let password: String
     
@@ -22,7 +22,7 @@ struct LoginRequest: Codable {
     }
 }
 
-struct LogoutRequest: Codable {
+struct LogoutRequest {
     let accessToken: String
     
     init(accessToken: String) {
@@ -30,7 +30,7 @@ struct LogoutRequest: Codable {
     }
 }
 
-struct RefreshTokenRequest: Codable {
+struct RefreshTokenRequest {
     let refreshToken: String
     
     init(refreshToken: String) {

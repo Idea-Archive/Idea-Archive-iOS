@@ -11,7 +11,7 @@ extension Bundle {
         return key
     }
     
-    var textAPIKey: String {
+    var testAPIKey: String {
         guard let file = self.path(forResource: "URLInfo", ofType: "plist") else { return ""}
         
         guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
