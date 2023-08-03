@@ -55,7 +55,6 @@
 		78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */; };
 		78BE2D4E2A7A2701009D9E20 /* EmailServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE2D4D2A7A2701009D9E20 /* EmailServices.swift */; };
 		78BE2D512A7A2721009D9E20 /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE2D502A7A2721009D9E20 /* EmailRequest.swift */; };
-		78BE2D542A7A2E64009D9E20 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE2D532A7A2E64009D9E20 /* Email.swift */; };
 		78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */; };
 		D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */; };
 		D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */; };
@@ -106,7 +105,6 @@
 		78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		78BE2D4D2A7A2701009D9E20 /* EmailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailServices.swift; sourceTree = "<group>"; };
 		78BE2D502A7A2721009D9E20 /* EmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRequest.swift; sourceTree = "<group>"; };
-		78BE2D532A7A2E64009D9E20 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setImage.swift"; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			children = (
 				787211F72A77816C008B2998 /* KeyChain */,
 				781BD2852A77405B00118B99 /* Auth */,
-				78BE2D522A7A2E55009D9E20 /* Email */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -486,14 +483,6 @@
 			path = Email;
 			sourceTree = "<group>";
 		};
-		78BE2D522A7A2E55009D9E20 /* Email */ = {
-			isa = PBXGroup;
-			children = (
-				78BE2D532A7A2E64009D9E20 /* Email.swift */,
-			);
-			path = Email;
-			sourceTree = "<group>";
-		};
 		78BE2D552A7A2F17009D9E20 /* SignupResult */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,7 +640,6 @@
 				781BD2812A7739C300118B99 /* AuthServices.swift in Sources */,
 				78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */,
 				785BBEFB2A25ABFF00186DDA /* Color.swift in Sources */,
-				78BE2D542A7A2E64009D9E20 /* Email.swift in Sources */,
 				785BBF112A25AD6700186DDA /* FindPasswordViewController.swift in Sources */,
 				781BD2872A77406200118B99 /* Auth.swift in Sources */,
 				787211F92A778179008B2998 /* KeyChainManager.swift in Sources */,
