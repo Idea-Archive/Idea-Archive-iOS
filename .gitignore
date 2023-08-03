@@ -152,6 +152,6 @@ xcuserdata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # file: .gitignore
-Info.plist
+URLInfo.plist
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
