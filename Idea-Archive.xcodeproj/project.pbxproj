@@ -59,6 +59,7 @@
 		78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */; };
 		D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */; };
 		D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */; };
+		D0C843032A7B5B4D005F7EC6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C843022A7B5B4D005F7EC6 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setImage.swift"; sourceTree = "<group>"; };
+		D0C843022A7B5B4D005F7EC6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 		786DCB2829F81E6D00228885 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D0C843012A7B1235005F7EC6 /* Main */,
 				785BBEF62A25ABB500186DDA /* Login */,
 				785BBF082A25ACEE00186DDA /* Signup */,
 				786E0FF82A2B097F00F73173 /* FindPassword */,
@@ -543,6 +546,14 @@
 			path = UIButton;
 			sourceTree = "<group>";
 		};
+		D0C843012A7B1235005F7EC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0C843022A7B5B4D005F7EC6 /* MainVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -645,6 +656,7 @@
 				78015C4D2A31BE6C00737055 /* CertificationNumberViewController.swift in Sources */,
 				785BBEF82A25ABC200186DDA /* LoginViewController.swift in Sources */,
 				785BBF022A25AC6000186DDA /* LargeTitleLabel.swift in Sources */,
+				D0C843032A7B5B4D005F7EC6 /* MainVC.swift in Sources */,
 				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseViewController.swift in Sources */,
 				787211F62A777FD9008B2998 /* LoginViewModel.swift in Sources */,
