@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class SignupViewController: BaseViewController {
+final class SignupViewController: BaseVC {
     
     private let signupLabel = TitleLabel().then{
         $0.text = "SIGN UP"
@@ -103,7 +103,7 @@ final class SignupViewController: BaseViewController {
     }
     
     @objc func confirmationButtonTapped(_ sender: UIButton){
-        let vc = CertificationNumberViewController()
+        let vc = CertificationNumberVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class LoginViewController: BaseViewController {
+final class LoginVC: BaseVC {
     
     private let loginLabel = TitleLabel().then{
         $0.text = "LOGIN"
@@ -66,7 +66,7 @@ final class LoginViewController: BaseViewController {
     private lazy var gotoSignupButton = AdditionalButton().then{
         $0.setTitle("회원가입", for: .normal)
         $0.setTitleColor(UIColor(rgb: 0x191919), for: .normal)
-        //        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
+        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
     
     override func setup() {
@@ -90,6 +90,7 @@ final class LoginViewController: BaseViewController {
         view.addSubview(googleLoginButton)
         view.addSubview(kakaoLoginButton)
         view.addSubview(githubLoginButton)
+        
     }
     
     override func setLayout(){
@@ -158,7 +159,7 @@ final class LoginViewController: BaseViewController {
     }
     
     @objc func findPasswordButtonTapped(_ sender: UIButton){
-        let vc = FindPasswordViewController()
+        let vc = FindPasswordVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -169,7 +170,7 @@ final class LoginViewController: BaseViewController {
     
 }
 
-extension LoginViewController: UITextFieldDelegate{
+extension LoginVC: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

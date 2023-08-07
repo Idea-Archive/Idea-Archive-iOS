@@ -57,5 +57,3 @@ extension EmailServices: TargetType {
         }
     }
 }
-
-

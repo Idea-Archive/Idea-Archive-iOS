@@ -1,4 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
+
+이# Created by https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=swiftpackagemanager,swift,xcode,macos,git
 
 ### Git ###
@@ -152,6 +153,6 @@ xcuserdata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # file: .gitignore
-URLInfo.plist
+BASEURLInfo.plist
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git

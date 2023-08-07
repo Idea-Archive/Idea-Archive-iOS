@@ -21,4 +21,3 @@ struct LoginRequest: Encodable {
         self.password = password
     }
 }
-

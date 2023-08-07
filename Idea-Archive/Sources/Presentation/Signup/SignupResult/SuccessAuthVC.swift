@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class SuccessAuthViewController: BaseViewController {
+final class SuccessAuthVC: BaseVC {
     
     private let successImage = UIImageView().then{
         $0.image = UIImage(named: "Success.png")

@@ -4,8 +4,8 @@ import Moya
 enum AuthServices {
     case signup(param: SignupRequest)
     case login(param: LoginRequest)
-    case logout(accessToken: String)
-    case refreshToken(refreshToken: String)
+    case logout(param: String)
+    case refreshToken(param: String)
 }
 extension AuthServices: TargetType {
     
