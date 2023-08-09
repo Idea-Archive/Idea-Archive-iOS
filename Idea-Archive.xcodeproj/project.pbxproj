@@ -59,6 +59,7 @@
 		78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */; };
 		D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */; };
 		D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */; };
+		D0BCB2CC2A82411D006AFE2D /* SelectedMajorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCB2CB2A82411D006AFE2D /* SelectedMajorButton.swift */; };
 		D0C843032A7B5B4D005F7EC6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C843022A7B5B4D005F7EC6 /* MainVC.swift */; };
 		D0C843052A7B62A6005F7EC6 /* MajorSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C843042A7B62A6005F7EC6 /* MajorSelectButton.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +113,7 @@
 		78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setImage.swift"; sourceTree = "<group>"; };
+		D0BCB2CB2A82411D006AFE2D /* SelectedMajorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMajorButton.swift; sourceTree = "<group>"; };
 		D0C843022A7B5B4D005F7EC6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D0C843042A7B62A6005F7EC6 /* MajorSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorSelectButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 		781BD27B2A77314600118B99 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D0C8433C2A7D3A7E005F7EC6 /* Post */,
 				781BD27F2A7739B700118B99 /* Auth */,
 				78BE2D4C2A7A26F6009D9E20 /* Email */,
 			);
@@ -228,6 +231,7 @@
 				785BBF042A25AC8400186DDA /* NextStepButton.swift */,
 				785BBF062A25AC9600186DDA /* AdditionalButton.swift */,
 				D0C843042A7B62A6005F7EC6 /* MajorSelectButton.swift */,
+				D0BCB2CB2A82411D006AFE2D /* SelectedMajorButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -557,6 +561,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		D0C8433C2A7D3A7E005F7EC6 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -679,6 +690,7 @@
 				D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */,
 				785BBF072A25AC9600186DDA /* AdditionalButton.swift in Sources */,
 				78BE2D4E2A7A2701009D9E20 /* EmailServices.swift in Sources */,
+				D0BCB2CC2A82411D006AFE2D /* SelectedMajorButton.swift in Sources */,
 				78BE2D512A7A2721009D9E20 /* EmailRequest.swift in Sources */,
 				785DFE092A7693C500867D64 /* BaseURL.swift in Sources */,
 				785BBF0A2A25ACFD00186DDA /* SignupViewController.swift in Sources */,
