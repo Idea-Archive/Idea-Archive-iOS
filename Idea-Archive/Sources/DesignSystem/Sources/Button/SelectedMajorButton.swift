@@ -20,6 +20,5 @@ public final class SelectedMajorButton: UIButton {
         layer.cornerRadius = 16
         layer.borderWidth = 1
         backgroundColor = UIColor(named: "PrimaryColor")
-        
     }
 }

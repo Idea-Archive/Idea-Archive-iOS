@@ -55,14 +55,17 @@ final class MainVC: BaseViewController {
     
     private let mainHeaderView = UIView()
     
-    private let selectMajorStackView = UIStackView().then {
+    private let selectMajorScrollView = UIScrollView().then {
+        $0.showsHorizontalScrollIndicator = false
+    }
+    private let selectMajorStackView = UIStackView().then() {
         $0.axis = .horizontal
         $0.spacing = 4
         $0.distribution = .equalSpacing
         $0.alignment = .fill
     }
     
-    private let frontButton = MajorSelectButton(setTitle: "FrontEnd")
+    private let frontendButton = MajorSelectButton(setTitle: "FrontEnd")
     private let backendButton = MajorSelectButton(setTitle: "BackEnd")
     private let aosButton = MajorSelectButton(setTitle: "Android")
     private let iosButton = MajorSelectButton(setTitle: "iOS")
@@ -72,6 +75,7 @@ final class MainVC: BaseViewController {
     private let postListLabel = UILabel().then {
         $0.text = "게시글 목록"
         $0.textColor = UIColor(rgb: 0x000000)
+        $0.font = .I_A(size: 15, family: .medium)
     }
     
     private let newWritingButton = UIButton().then {
@@ -97,8 +101,8 @@ final class MainVC: BaseViewController {
         view.addSubviews(categoryStackView, settingStackView,newWritingButton,postListLabel, mainTableView)
         
         mainTableView.addSubviews(mainHeaderView, newWritingButton)
-        
-        mainHeaderView.addSubviews(selectMajorStackView, postListLabel)
+        mainHeaderView.addSubviews(selectMajorScrollView, postListLabel)
+        selectMajorScrollView.addSubview(selectMajorStackView)
         
         [entireCategoryButton, ideaCategoryButton, feedbackCategoryButton, jobOpeningCategoryButton].forEach {
             categoryStackView.addArrangedSubview($0)
@@ -106,8 +110,8 @@ final class MainVC: BaseViewController {
         
         [searchButton, myPageButton].forEach{ settingStackView.addArrangedSubview($0)
         }
-    
-        [frontButton, backendButton, aosButton, iosButton, designButton, devButton].forEach {
+        
+        [frontendButton, backendButton, aosButton, iosButton, designButton, devButton].forEach {
             selectMajorStackView.addArrangedSubview($0)
         }
     }
@@ -121,17 +125,47 @@ final class MainVC: BaseViewController {
         
         mainHeaderView.snp.makeConstraints{
             $0.top.leading.trailing.equalTo(mainTableView.safeAreaLayoutGuide)
-            $0.height.equalTo(56)
+            $0.height.equalTo(67)
         }
         
-        selectMajorStackView.snp.makeConstraints {
-            $0.top.leading.trailing.equalTo(mainHeaderView)
+        selectMajorScrollView.snp.makeConstraints {
+            $0.top.trailing.equalTo(mainHeaderView.safeAreaLayoutGuide)
+            $0.leading.equalTo(mainHeaderView).inset(20)
             $0.height.equalTo(32)
         }
         
+        selectMajorStackView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.bottom.equalTo(selectMajorScrollView.safeAreaLayoutGuide)
+        }
+        
+        frontendButton.snp.makeConstraints {
+            $0.width.equalTo(76)
+        }
+        
+        backendButton.snp.makeConstraints {
+            $0.width.equalTo(71)
+        }
+        
+        aosButton.snp.makeConstraints {
+            $0.width.equalTo(67)
+        }
+        
+        iosButton.snp.makeConstraints {
+            $0.width.equalTo(43)
+        }
+        
+        designButton.snp.makeConstraints {
+            $0.width.equalTo(62)
+        }
+        
+        devButton.snp.makeConstraints {
+            $0.width.equalTo(67)
+        }
+
         postListLabel.snp.makeConstraints {
-            $0.top.equalTo(selectMajorStackView.snp.bottom).inset(-16)
-            $0.leading.equalTo(mainHeaderView).inset(28)
+            $0.bottom.equalTo(mainHeaderView.snp.bottom)
+            $0.leading.equalTo(mainHeaderView).inset(24)
         }
         
         newWritingButton.snp.makeConstraints {

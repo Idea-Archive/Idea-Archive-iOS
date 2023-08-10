@@ -555,11 +555,27 @@
 			path = UIButton;
 			sourceTree = "<group>";
 		};
-		D0C843012A7B1235005F7EC6 /* Main */ = {
+		D0BCB30D2A839BC7006AFE2D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D0BCB30B2A8384A1006AFE2D /* MainTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D0BCB3102A84FCE0006AFE2D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D0C843022A7B5B4D005F7EC6 /* MainVC.swift */,
-				D0BCB30B2A8384A1006AFE2D /* MainTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0C843012A7B1235005F7EC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0BCB3102A84FCE0006AFE2D /* View */,
+				D0BCB30D2A839BC7006AFE2D /* Cell */,
 			);
 			path = Main;
 			sourceTree = "<group>";
