@@ -60,7 +60,6 @@
 		D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */; };
 		D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */; };
 		D0BCB2CC2A82411D006AFE2D /* SelectedMajorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCB2CB2A82411D006AFE2D /* SelectedMajorButton.swift */; };
-		D0BCB30C2A8384A1006AFE2D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCB30B2A8384A1006AFE2D /* MainTableViewCell.swift */; };
 		D0C843032A7B5B4D005F7EC6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C843022A7B5B4D005F7EC6 /* MainVC.swift */; };
 		D0C843052A7B62A6005F7EC6 /* MajorSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C843042A7B62A6005F7EC6 /* MajorSelectButton.swift */; };
 /* End PBXBuildFile section */
@@ -115,7 +114,6 @@
 		D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setImage.swift"; sourceTree = "<group>"; };
 		D0BCB2CB2A82411D006AFE2D /* SelectedMajorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMajorButton.swift; sourceTree = "<group>"; };
-		D0BCB30B2A8384A1006AFE2D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		D0C843022A7B5B4D005F7EC6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D0C843042A7B62A6005F7EC6 /* MajorSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorSelectButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -558,7 +556,6 @@
 		D0BCB30D2A839BC7006AFE2D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D0BCB30B2A8384A1006AFE2D /* MainTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -705,7 +702,6 @@
 				D0C843052A7B62A6005F7EC6 /* MajorSelectButton.swift in Sources */,
 				786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */,
 				78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */,
-				D0BCB30C2A8384A1006AFE2D /* MainTableViewCell.swift in Sources */,
 				D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */,
 				D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */,
 				785BBF072A25AC9600186DDA /* AdditionalButton.swift in Sources */,
