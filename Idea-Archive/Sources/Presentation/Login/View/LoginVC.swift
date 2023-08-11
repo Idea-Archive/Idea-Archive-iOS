@@ -19,7 +19,7 @@ final class LoginVC: BaseVC {
     private lazy var loginButton = NextStepButton().then {
         $0.setTitle("로그인", for: .normal)
         $0.isEnabled = false
-        $0.backgroundColor = UIColor(rgb: 0x999999)
+        $0.backgroundColor = UIColor(rgb: 0x42CC89)
         $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
