@@ -2,8 +2,8 @@ import Foundation
 import Moya
 
 enum EmailServices {
-    case getCertificationNumber(param: GetCertificationNumberRequest)
-    case checkCertificationNumber(param: CheckCertificationNumberRequest)
+    case getCertificationNumber(getCertificationNumberRequest: String)
+    case checkCertificationNumber(checkCertificationNumberRequest: CheckCertificationNumberRequest)
 }
 extension EmailServices: TargetType {
     
@@ -37,7 +37,7 @@ extension EmailServices: TargetType {
         switch self {
         case .getCertificationNumber(let param):
             let params : [String: String] = [
-                "email" : param.email
+                "email" : param
             ]
             return .requestJSONEncodable(params)
         default:
