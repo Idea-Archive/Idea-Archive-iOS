@@ -11,7 +11,7 @@ extension SignupUserInfoViewModel {
     
         let param = SignupRequest.init(email: email, password: password, name: name)
         
-        authProvider.request(.signup(param: param)) { response in
+        authProvider.request(.signup(signupRequest: param)) { response in
             
             switch response {
             case .success(let result):
