@@ -8,7 +8,7 @@ final class LoginVC: BaseVC {
         $0.text = "LOGIN"
     }
     
-    private let idTextField = NormalTextField(placeholder: "아이디를 입력해주세요").then{
+    private let idTextField = NormalTextField(placeholder: "이메일을 입력해주세요").then{
         $0.font = .I_A(size: 14, family: .regular)
     }
     
