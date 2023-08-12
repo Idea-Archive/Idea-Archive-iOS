@@ -14,7 +14,7 @@ extension LoginViewModel {
     
         let param = LoginRequest.init(email: email, password: password)
         
-        authProvider.request(.login(param: param)) { response in
+        authProvider.request(.login(loginRequest: param)) { response in
             
             switch response {
             case .success(let result):
