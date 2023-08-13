@@ -1,32 +1,27 @@
 import UIKit
 import Moya
 
-class LoginViewModel {
+class CertificationNumberVM {
     let authProvider = MoyaProvider<AuthServices>()
-    var authData: LoginResponse!
-    
-    static var accessToken = ""
 }
 
-extension LoginViewModel {
+extension CertificationNumberVM {
     
-    func loginCompleted(email: String, password: String) {
+    func signupCompleted(email: String, password: String, name: String) {
     
-        let param = LoginRequest.init(email: email, password: password)
+        let param = SignupRequest.init(email: email, password: password, name: name)
         
-        authProvider.request(.login(loginRequest: param)) { response in
+        authProvider.request(.signup(signupRequest: param)) { response in
             
             switch response {
             case .success(let result):
                 
                 do {
-                    self.authData = try? result.map(LoginResponse.self)
-                    
-                    try KeychainManager.delete()
-                    
-                    try KeychainManager.save(
-                        userId: param.email,
-                        refreshToken: self.authData.accessToken.data(using: .utf8) ?? Data())
+//                    try KeychainManager.delete()
+//
+//                    try KeychainManager.save(
+//                        userId: param.email,
+//                        refreshToken: self.authData.accessToken.data(using: .utf8) ?? Data())
                 }catch(let err) {
                     print(String(describing: err))
                 }
@@ -34,7 +29,6 @@ extension LoginViewModel {
                 
                 switch statusCode{
                 case 200..<300:
-                    print(self.authData.accessToken)
                     print("성공")
                 case 400:
                     print("Login failed with status code: \(statusCode)")

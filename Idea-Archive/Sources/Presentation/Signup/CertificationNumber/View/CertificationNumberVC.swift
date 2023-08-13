@@ -78,6 +78,7 @@ final class CertificationNumberVC: BaseVC {
     }
     
     func setUpOutputBinding() {
+        
         RxKeyboard.instance.visibleHeight
             .skip(1)    // 초기 값 버리기
             .drive(onNext: { keyboardVisibleHeight in
@@ -88,9 +89,6 @@ final class CertificationNumberVC: BaseVC {
             })
             .disposed(by: disposeBag)
     }
-    
-    
-    
 }
 
 extension CertificationNumberVC: AEOTPTextFieldDelegate, UITextFieldDelegate {
@@ -105,7 +103,7 @@ extension CertificationNumberVC: AEOTPTextFieldDelegate, UITextFieldDelegate {
     }
     
     func didUserFinishEnter(the code: String) {
-        print(code.count)
+        print(code)
     }
     
     func textFieldDidChangeSelection(_ textField: AEOTPTextField) {
