@@ -34,7 +34,7 @@ final class FindPasswordVC: BaseVC {
     }
     
     @objc func signupButtonTapped(_ sender: UIButton){
-        let vc = SignupViewController()
+        let vc = SignupVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

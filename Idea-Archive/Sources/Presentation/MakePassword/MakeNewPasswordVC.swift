@@ -48,7 +48,7 @@ final class MakeNewPasswordVC: BaseVC {
     }
     
     @objc func confirmationButtonTapped(_ sender: UIButton){
-        let vc = SignupViewController()
+        let vc = SignupVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

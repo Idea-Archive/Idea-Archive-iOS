@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class SignupViewController: BaseVC {
+final class SignupVC: BaseVC {
     
     private let signupLabel = TitleLabel().then{
         $0.text = "SIGN UP"
@@ -112,7 +112,7 @@ final class SignupViewController: BaseVC {
     }
 }
 
-extension SignupViewController: UITextFieldDelegate{
+extension SignupVC: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
