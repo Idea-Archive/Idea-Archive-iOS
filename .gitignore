@@ -91,7 +91,6 @@ playground.xcworkspace
 # Packages/
 # Package.pins
 # Package.resolved
-# *.xcodeproj
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
 # hence it is not needed unless you have added a package configuration file to your project
 # .swiftpm
@@ -135,24 +134,7 @@ iOSInjectionProject/
 
 ### SwiftPackageManager ###
 Packages
-xcuserdata
-*.xcodeproj
 
-
-### Xcode ###
-
-## Xcode 8 and earlier
-
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-**/xcshareddata/WorkspaceSettings.xcsettings
-
-# file: .gitignore
-BASEURLInfo.plist
+BaseURL.plist
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
