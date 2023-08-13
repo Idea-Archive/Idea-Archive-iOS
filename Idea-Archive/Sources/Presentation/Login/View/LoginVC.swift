@@ -8,7 +8,7 @@ final class LoginVC: BaseVC {
         $0.text = "LOGIN"
     }
     
-    private let idTextField = NormalTextField(placeholder: "아이디를 입력해주세요").then{
+    private let idTextField = NormalTextField(placeholder: "이메일을 입력해주세요").then{
         $0.font = .I_A(size: 14, family: .regular)
     }
     
@@ -19,7 +19,7 @@ final class LoginVC: BaseVC {
     private lazy var loginButton = NextStepButton().then {
         $0.setTitle("로그인", for: .normal)
         $0.isEnabled = false
-        $0.backgroundColor = UIColor(rgb: 0x999999)
+        $0.backgroundColor = UIColor(named: "PrimaryColor")
         $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
