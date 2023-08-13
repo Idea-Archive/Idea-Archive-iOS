@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class MakeNewPasswordViewController: BaseViewController {
+final class MakeNewPasswordVC: BaseVC {
     
     private let changePasswordLabel = LargeTitleLabel().then{
         $0.text = "새 비밀번호를 입력해주세요!"
@@ -48,7 +48,7 @@ final class MakeNewPasswordViewController: BaseViewController {
     }
     
     @objc func confirmationButtonTapped(_ sender: UIButton){
-        let vc = SignupViewController()
+        let vc = SignupVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -80,7 +80,7 @@ final class MakeNewPasswordViewController: BaseViewController {
     }
 }
 
-extension MakeNewPasswordViewController: UITextFieldDelegate{
+extension MakeNewPasswordVC: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

@@ -6,7 +6,7 @@ import RxSwift
 import RxKeyboard
 import RxCocoa
 
-final class CertificationNumberViewController: BaseViewController {
+final class CertificationNumberVC: BaseVC {
     
     let disposeBag = DisposeBag()
     
@@ -91,7 +91,7 @@ final class CertificationNumberViewController: BaseViewController {
     }
 }
 
-extension CertificationNumberViewController: AEOTPTextFieldDelegate, UITextFieldDelegate {
+extension CertificationNumberVC: AEOTPTextFieldDelegate, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

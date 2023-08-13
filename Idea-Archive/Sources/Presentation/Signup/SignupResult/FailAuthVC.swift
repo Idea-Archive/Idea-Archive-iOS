@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class FailAuthViewController: BaseViewController {
+final class FailAuthVC: BaseVC {
     
     private let failAuthorizeImage = UIImageView().then{
         $0.image = UIImage(named: "Fail.png")
@@ -23,7 +23,7 @@ final class FailAuthViewController: BaseViewController {
     private let goBackToLoginButton = NextStepButton().then{
         $0.setTitle("로그인으로 돌아가기", for: .normal)
         $0.backgroundColor = UIColor(rgb: 0x42CC89)
-        $0.addTarget(FailAuthViewController.self, action: #selector(goBackToLoginButtonTapped), for: .touchUpInside)
+        $0.addTarget(FailAuthVC.self, action: #selector(goBackToLoginButtonTapped), for: .touchUpInside)
     }
     
     @objc func goBackToLoginButtonTapped(_ sender: UIButton){

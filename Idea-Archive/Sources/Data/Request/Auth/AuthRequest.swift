@@ -21,19 +21,3 @@ struct LoginRequest: Encodable {
         self.password = password
     }
 }
-
-struct LogoutRequest {
-    let accessToken: String
-    
-    init(accessToken: String) {
-        self.accessToken = accessToken
-    }
-}
-
-struct RefreshTokenRequest {
-    let refreshToken: String
-    
-    init(refreshToken: String) {
-        self.refreshToken = refreshToken
-    }
-}

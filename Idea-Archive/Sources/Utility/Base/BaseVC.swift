@@ -1,7 +1,7 @@
 import UIKit
 import Moya
 
-class BaseViewController: UIViewController {
+class BaseVC: UIViewController {
     // MARK: - Properties
     let bounds = UIScreen().bounds
     // MARK: - LifeCycle
