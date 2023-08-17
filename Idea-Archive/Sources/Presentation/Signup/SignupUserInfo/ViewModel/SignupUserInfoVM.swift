@@ -17,12 +17,7 @@ extension SignupUserInfoVM {
             case .success(let result):
                 
                 do {
-//                    try KeychainManager.delete()
-//
-//                    try KeychainManager.save(
-//                        userId: param.email,
-//                        refreshToken: self.authData.accessToken.data(using: .utf8) ?? Data())
-                }catch(let err) {
+                } catch(let err) {
                     print(String(describing: err))
                 }
                 let statusCode = result.statusCode

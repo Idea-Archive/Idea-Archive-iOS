@@ -2,26 +2,22 @@ import UIKit
 import Moya
 
 class CertificationNumberVM {
-    let authProvider = MoyaProvider<AuthServices>()
+    let authProvider = MoyaProvider<EmailServices>()
 }
 
 extension CertificationNumberVM {
     
-    func signupCompleted(email: String, password: String, name: String) {
-    
-        let param = SignupRequest.init(email: email, password: password, name: name)
+    func CheckCertificationNumber(email: String, authKey: String) {
         
-        authProvider.request(.signup(signupRequest: param)) { response in
+        let param = CheckCertificationNumberRequest(email: email, authKey: authKey)
+        
+        authProvider.request(
+            .checkCertificationNumber(checkCertificationNumberRequest: param)) { response in
             
             switch response {
             case .success(let result):
                 
                 do {
-//                    try KeychainManager.delete()
-//
-//                    try KeychainManager.save(
-//                        userId: param.email,
-//                        refreshToken: self.authData.accessToken.data(using: .utf8) ?? Data())
                 }catch(let err) {
                     print(String(describing: err))
                 }
@@ -41,4 +37,3 @@ extension CertificationNumberVM {
         }
     }
 }
-

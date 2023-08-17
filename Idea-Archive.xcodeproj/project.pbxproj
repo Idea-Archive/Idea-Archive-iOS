@@ -515,8 +515,6 @@
 			isa = PBXGroup;
 			children = (
 				78D7EE9A2A88B370003A80DA /* View */,
-				785BBF0B2A25AD2F00186DDA /* SuccessAuthVC.swift */,
-				785BBF0D2A25AD4600186DDA /* FailAuthVC.swift */,
 			);
 			path = SignupResult;
 			sourceTree = "<group>";
@@ -542,6 +540,8 @@
 		78D7EE9A2A88B370003A80DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				785BBF0B2A25AD2F00186DDA /* SuccessAuthVC.swift */,
+				785BBF0D2A25AD4600186DDA /* FailAuthVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

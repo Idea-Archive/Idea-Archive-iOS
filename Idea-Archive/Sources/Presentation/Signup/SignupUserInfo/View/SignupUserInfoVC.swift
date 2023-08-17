@@ -112,7 +112,7 @@ final class SignupVC: BaseVC {
     }
 }
 
-extension SignupVC: UITextFieldDelegate{
+extension SignupVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
