@@ -8,12 +8,42 @@ final class LoginVC: BaseVC {
         $0.text = "LOGIN"
     }
     
-    private let idTextField = NormalTextField(placeholder: "이메일을 입력해주세요").then{
+    private let textFieldStackView = UIStackView().then {
+        $0.axis = .vertical
+        $0.spacing = 12
+        $0.distribution = .fill
+        $0.alignment = .fill
+    }
+    
+    private let idTextField = NormalTextField(placeholder: "이메일을 입력해주세요").then {
         $0.font = .I_A(size: 14, family: .regular)
     }
     
-    private let passwordTextField = SecureTextField(placeholder: "비밀번호를 입력해주세요").then{
+    private let passwordTextField = SecureTextField(placeholder: "비밀번호를 입력해주세요").then {
         $0.font = .I_A(size: 14, family: .regular)
+    }
+    
+    private let signupFindPasswordStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.spacing = 8
+        $0.distribution = .fill
+        $0.alignment = .fill
+    }
+    
+    private lazy var gotoSignupButton = AdditionalButton().then {
+        $0.setTitle("회원가입", for: .normal)
+        $0.setTitleColor(UIColor(rgb: 0x999999), for: .normal)
+        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
+    }
+    
+    private let betweenView = UIView().then {
+        $0.backgroundColor = UIColor(rgb: 0x999999)
+    }
+    
+    private lazy var findPasswordButton = AdditionalButton().then {
+        $0.setTitle("비밀번호 찾기", for: .normal)
+        $0.setTitleColor(UIColor(rgb: 0x999999), for: .normal)
+        $0.addTarget(self, action: #selector(findPasswordButtonTapped), for: .touchUpInside)
     }
     
     private lazy var loginButton = NextStepButton().then {
@@ -23,57 +53,35 @@ final class LoginVC: BaseVC {
         $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     
-    private let forgotPaswordLabel = SmallTitleLabel().then {
-        $0.text = "비밀번호를 잊으셨나요?"
-        $0.textColor = UIColor(rgb: 0x191919)
-    }
-    
-    private lazy var findPasswordButton = AdditionalButton().then {
-        $0.setTitle("비밀번호 찾기", for: .normal)
-        $0.setTitleColor(UIColor(rgb: 0x35B2CD), for: .normal)
-        $0.addTarget(self, action: #selector(findPasswordButtonTapped), for: .touchUpInside)
-    }
-    
-    private let buttonStackView = UIStackView().then{
+    private let socialLoginButtonStackView = UIStackView().then {
         $0.axis = .horizontal
         $0.spacing = 28
         $0.distribution = .fill
         $0.alignment = .fill
     }
     
-    private lazy var googleLoginButton = UIButton().then{
+    private lazy var googleLoginButton = UIButton().then {
         $0.setImage(UIImage(named: "Google"), for: .normal)
         $0.layer.cornerRadius = 18
         $0.clipsToBounds = true
     }
     
-    private lazy var kakaoLoginButton = UIButton().then{
+    private lazy var kakaoLoginButton = UIButton().then {
         $0.setImage(UIImage(named: "Kakao"), for: .normal)
         $0.layer.cornerRadius = 18
         $0.clipsToBounds = true
     }
     
-    private lazy var githubLoginButton = UIButton().then{
+    private lazy var githubLoginButton = UIButton().then {
         $0.setImage(UIImage(named: "Github"), for: .normal)
         $0.layer.cornerRadius = 18
         $0.clipsToBounds = true
     }
     
-    private lazy var appleLoginButton = UIButton().then{
+    private lazy var appleLoginButton = UIButton().then {
         $0.setImage(UIImage(named: "Apple"), for: .normal)
         $0.layer.cornerRadius = 18
         $0.clipsToBounds = true
-    }
-    
-    private let firstTimeIdeaArchiveLabel = SmallTitleLabel().then {
-        $0.text = "IA가 처음이신가요?"
-        $0.textColor = UIColor(rgb: 0x767676)
-    }
-    
-    private lazy var gotoSignupButton = AdditionalButton().then {
-        $0.setTitle("회원가입", for: .normal)
-        $0.setTitleColor(UIColor(rgb: 0x191919), for: .normal)
-        $0.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
     }
     
     override func setup() {
@@ -86,24 +94,32 @@ final class LoginVC: BaseVC {
     override func addView() {
         view.addSubviews(
             loginLabel,
-            idTextField,
-            passwordTextField,
+            textFieldStackView,
+            signupFindPasswordStackView,
             loginButton,
-            forgotPaswordLabel,
-            findPasswordButton,
-            firstTimeIdeaArchiveLabel,
-            gotoSignupButton,
-            buttonStackView
+            socialLoginButtonStackView
         )
+        [
+            idTextField,
+            passwordTextField
+        ].forEach{
+            textFieldStackView.addArrangedSubview($0)
+        }
+        [
+            gotoSignupButton,
+            betweenView,
+            findPasswordButton
+        ].forEach{
+            signupFindPasswordStackView.addArrangedSubview($0)
+        }
         [
             appleLoginButton,
             googleLoginButton,
             kakaoLoginButton,
             githubLoginButton
         ].forEach{
-            buttonStackView.addArrangedSubview($0)
+            socialLoginButtonStackView.addArrangedSubview($0)
         }
-        
     }
     
     override func setLayout(){
@@ -111,24 +127,24 @@ final class LoginVC: BaseVC {
             $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(52)
             $0.centerX.equalTo(view.snp.centerX)
         }
-        self.idTextField.snp.makeConstraints {
-            $0.height.equalTo(52)
+        self.textFieldStackView.snp.makeConstraints {
+            $0.height.equalTo(116)
             $0.top.equalTo(loginLabel.snp.bottom).offset(64)
             $0.leading.trailing.equalTo(self.view).inset(28)
         }
-        self.passwordTextField.snp.makeConstraints {
+        self.idTextField.snp.makeConstraints{
             $0.height.equalTo(52)
-            $0.top.equalTo(idTextField.snp.bottom).offset(12)
-            $0.leading.trailing.equalTo(self.view).inset(28)
         }
-        self.forgotPaswordLabel.snp.makeConstraints {
-            $0.top.equalTo(loginButton.snp.bottom).offset(12)
-            $0.leading.equalTo(self.view).offset(94)
+        self.passwordTextField.snp.makeConstraints{
+            $0.height.equalTo(52)
         }
-        self.findPasswordButton.snp.makeConstraints {
-            $0.height.equalTo(20)
-            $0.top.equalTo(loginButton.snp.bottom).offset(10)
-            $0.leading.equalTo(forgotPaswordLabel.snp.trailing).offset(4)
+        self.signupFindPasswordStackView.snp.makeConstraints {
+            $0.top.equalTo(textFieldStackView.snp.bottom).offset(8)
+            $0.trailing.equalToSuperview().inset(28)
+        }
+        self.betweenView.snp.makeConstraints {
+            $0.height.equalTo(12)
+            $0.width.equalTo(1)
         }
         self.loginButton.snp.makeConstraints {
             $0.height.equalTo(52)
@@ -136,7 +152,7 @@ final class LoginVC: BaseVC {
             $0.leading.equalTo(self.view).offset(24)
             $0.centerX.equalTo(view.snp.centerX)
         }
-        self.buttonStackView.snp.makeConstraints {
+        self.socialLoginButtonStackView.snp.makeConstraints {
             $0.top.equalTo(self.loginButton.snp.bottom).offset(253)
             $0.leading.trailing.equalToSuperview().inset(80)
         }
@@ -151,14 +167,6 @@ final class LoginVC: BaseVC {
         }
         self.githubLoginButton.snp.makeConstraints{
             $0.height.width.equalTo(36)
-        }
-        self.firstTimeIdeaArchiveLabel.snp.makeConstraints{
-            $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(12)
-            $0.leading.equalTo(self.view).offset(106)
-        }
-        self.gotoSignupButton.snp.makeConstraints{
-            $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(5)
-            $0.leading.equalTo(firstTimeIdeaArchiveLabel.snp.trailing).offset(4)
         }
     }
     

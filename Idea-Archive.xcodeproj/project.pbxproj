@@ -49,6 +49,7 @@
 		787211F62A777FD9008B2998 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F52A777FD9008B2998 /* LoginVM.swift */; };
 		787211F92A778179008B2998 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F82A778179008B2998 /* KeyChainManager.swift */; };
 		78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 78848A8B2A343E06001588AA /* RxKeyboard */; };
+		788623E02A8E420E00899F65 /* BaseURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 788623DF2A8E420E00899F65 /* BaseURL.plist */; };
 		78A644902A7F7B890021CC14 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78A6448F2A7F7B890021CC14 /* Moya */; };
 		78A644942A7F7E920021CC14 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A644932A7F7E920021CC14 /* SignupUserInfoVM.swift */; };
 		78B6644B2A0E89DF00B8C68C /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */; };
@@ -102,6 +103,7 @@
 		786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPlaceholderColor.swift"; sourceTree = "<group>"; };
 		787211F52A777FD9008B2998 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		787211F82A778179008B2998 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		788623DF2A8E420E00899F65 /* BaseURL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BaseURL.plist; sourceTree = "<group>"; };
 		78A644932A7F7E920021CC14 /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
 		78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
 		78B6644C2A0E8A7C00B8C68C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
@@ -136,7 +138,7 @@
 			children = (
 				785DFE082A7693C500867D64 /* BaseURL.swift */,
 				781BD28C2A7750D200118B99 /* Idea-Archive++Bundle.swift */,
-				78D7EE962A88B1A7003A80DA /* BaseURL.plist */,
+				788623DF2A8E420E00899F65 /* BaseURL.plist */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -657,7 +659,7 @@
 				785BBF202A25E9FE00186DDA /* Pretendard-Medium.otf in Resources */,
 				785BBF242A25E9FE00186DDA /* Pretendard-Thin.otf in Resources */,
 				785BBF252A25E9FE00186DDA /* Pretendard-Black.otf in Resources */,
-				78D7EE972A88B1A7003A80DA /* BaseURL.plist in Resources */,
+				788623E02A8E420E00899F65 /* BaseURL.plist in Resources */,
 				785BBF262A25E9FE00186DDA /* Pretendard-Light.otf in Resources */,
 				785BBF232A25E9FE00186DDA /* Pretendard-SemiBold.otf in Resources */,
 				786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */,
