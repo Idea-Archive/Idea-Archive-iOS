@@ -1,6 +1,23 @@
 import UIKit
 
 final class MainVC: BaseViewController {
+    let majors = ["FrontEnd", "BackEnd", "Android", "iOS", "Design", "DevOps"]
+    
+    private let flowLayout = UICollectionViewFlowLayout().then {
+        $0.scrollDirection = .horizontal
+        $0.minimumInteritemSpacing = 8.0
+    }
+    
+    private lazy var majorcollectionView = UICollectionView(frame: .zero, collectionViewLayout: self.flowLayout).then {
+        $0.isScrollEnabled = true
+        $0.showsHorizontalScrollIndicator = false
+        $0.showsVerticalScrollIndicator = true
+        $0.contentInset = .zero
+        $0.clipsToBounds = true
+        $0.register(MainCell.self, forCellWithReuseIdentifier: "MainCell")
+        $0.backgroundColor = .clear
+    }
+    
     private let mainTableView = UITableView().then {
         $0.backgroundColor = .clear
     }
@@ -55,23 +72,6 @@ final class MainVC: BaseViewController {
     
     private let mainHeaderView = UIView()
     
-    private let selectMajorScrollView = UIScrollView().then {
-        $0.showsHorizontalScrollIndicator = false
-    }
-    private let selectMajorStackView = UIStackView().then() {
-        $0.axis = .horizontal
-        $0.spacing = 4
-        $0.distribution = .equalSpacing
-        $0.alignment = .fill
-    }
-    
-    private let frontendButton = MajorSelectButton(setTitle: "FrontEnd")
-    private let backendButton = MajorSelectButton(setTitle: "BackEnd")
-    private let aosButton = MajorSelectButton(setTitle: "Android")
-    private let iosButton = MajorSelectButton(setTitle: "iOS")
-    private let designButton = MajorSelectButton(setTitle: "Design")
-    private let devButton = MajorSelectButton(setTitle: "DevOps")
-    
     private let postListLabel = UILabel().then {
         $0.text = "게시글 목록"
         $0.textColor = UIColor(rgb: 0x000000)
@@ -94,6 +94,8 @@ final class MainVC: BaseViewController {
         
         let settingRightBarItem = UIBarButtonItem(customView: settingStackView)
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem = settingRightBarItem
+        
+        self.majorcollectionView.dataSource = self
     }
     
     // MARK: - UI
@@ -101,18 +103,15 @@ final class MainVC: BaseViewController {
         view.addSubviews(categoryStackView, settingStackView,newWritingButton,postListLabel, mainTableView)
         
         mainTableView.addSubviews(mainHeaderView, newWritingButton)
-        mainHeaderView.addSubviews(selectMajorScrollView, postListLabel)
-        selectMajorScrollView.addSubview(selectMajorStackView)
+        
+        mainHeaderView.addSubviews(postListLabel, majorcollectionView)
         
         [entireCategoryButton, ideaCategoryButton, feedbackCategoryButton, jobOpeningCategoryButton].forEach {
             categoryStackView.addArrangedSubview($0)
         }
         
-        [searchButton, myPageButton].forEach{ settingStackView.addArrangedSubview($0)
-        }
-        
-        [frontendButton, backendButton, aosButton, iosButton, designButton, devButton].forEach {
-            selectMajorStackView.addArrangedSubview($0)
+        [searchButton, myPageButton].forEach{
+            settingStackView.addArrangedSubview($0)
         }
     }
     
@@ -124,45 +123,17 @@ final class MainVC: BaseViewController {
         }
         
         mainHeaderView.snp.makeConstraints{
-            $0.top.leading.trailing.equalTo(mainTableView.safeAreaLayoutGuide)
-            $0.height.equalTo(67)
+            $0.top.equalTo(mainTableView.safeAreaLayoutGuide).inset(4)
+            $0.leading.trailing.equalTo(mainTableView.safeAreaLayoutGuide)
+            $0.height.equalTo(54)
         }
         
-        selectMajorScrollView.snp.makeConstraints {
+        majorcollectionView.snp.makeConstraints {
             $0.top.trailing.equalTo(mainHeaderView.safeAreaLayoutGuide)
-            $0.leading.equalTo(mainHeaderView).inset(20)
-            $0.height.equalTo(32)
+            $0.leading.equalTo(mainHeaderView.safeAreaLayoutGuide).inset(20)
+            $0.height.equalTo(20)
         }
         
-        selectMajorStackView.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview()
-            $0.top.bottom.equalTo(selectMajorScrollView.safeAreaLayoutGuide)
-        }
-        
-        frontendButton.snp.makeConstraints {
-            $0.width.equalTo(76)
-        }
-        
-        backendButton.snp.makeConstraints {
-            $0.width.equalTo(71)
-        }
-        
-        aosButton.snp.makeConstraints {
-            $0.width.equalTo(67)
-        }
-        
-        iosButton.snp.makeConstraints {
-            $0.width.equalTo(43)
-        }
-        
-        designButton.snp.makeConstraints {
-            $0.width.equalTo(62)
-        }
-        
-        devButton.snp.makeConstraints {
-            $0.width.equalTo(67)
-        }
-
         postListLabel.snp.makeConstraints {
             $0.bottom.equalTo(mainHeaderView.snp.bottom)
             $0.leading.equalTo(mainHeaderView).inset(24)
@@ -174,4 +145,19 @@ final class MainVC: BaseViewController {
             $0.size.equalTo(60)
         }
     }
+}
+
+extension MainVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return majors.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCell.id, for: indexPath) as! MainCell
+        
+        cell.majorSelectButton.setTitle(majors[indexPath.item], for: .normal)
+        
+        return cell
+    }
+
 }
