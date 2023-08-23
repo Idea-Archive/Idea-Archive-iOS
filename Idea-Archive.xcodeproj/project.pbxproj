@@ -57,7 +57,7 @@
 		78BE2D512A7A2721009D9E20 /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE2D502A7A2721009D9E20 /* EmailRequest.swift */; };
 		78EC4ADF2A00056A002645B3 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC4ADE2A00056A002645B3 /* UIColor+HexColor.swift */; };
 		D022B8232A95F5440013D361 /* CertificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022B8222A95F5440013D361 /* CertificationVM.swift */; };
-		D022B8272A95F6AC0013D361 /* BaseURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = D022B8262A95F6AC0013D361 /* BaseURL.plist */; };
+		D022B8282A9620220013D361 /* BaseURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = D022B8262A95F6AC0013D361 /* BaseURL.plist */; };
 		D0AA9CA72A6F897A00C16679 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA62A6F897A00C16679 /* UIView+addSubviews.swift */; };
 		D0AA9CAA2A6F8AC100C16679 /* UIButton+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA9CA92A6F8AC100C16679 /* UIButton+setImage.swift */; };
 /* End PBXBuildFile section */
@@ -649,7 +649,7 @@
 				785BBF202A25E9FE00186DDA /* Pretendard-Medium.otf in Resources */,
 				785BBF242A25E9FE00186DDA /* Pretendard-Thin.otf in Resources */,
 				785BBF252A25E9FE00186DDA /* Pretendard-Black.otf in Resources */,
-				D022B8272A95F6AC0013D361 /* BaseURL.plist in Resources */,
+				D022B8282A9620220013D361 /* BaseURL.plist in Resources */,
 				785BBF262A25E9FE00186DDA /* Pretendard-Light.otf in Resources */,
 				785BBF232A25E9FE00186DDA /* Pretendard-SemiBold.otf in Resources */,
 				786DCB1A29F81C9300228885 /* Assets.xcassets in Resources */,
