@@ -4,6 +4,8 @@ import SnapKit
 
 final class SignupVC: BaseVC {
     
+    private let signupUserInfoVM = SignupUserInfoVM()
+    
     private let signupLabel = TitleLabel().then{
         $0.text = "SIGN UP"
     }

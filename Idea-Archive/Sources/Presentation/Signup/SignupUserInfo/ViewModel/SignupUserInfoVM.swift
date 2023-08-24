@@ -1,11 +1,11 @@
 import UIKit
 import Moya
 
-class SignupUserInfoViewModel {
+class SignupUserInfoVM {
     let authProvider = MoyaProvider<AuthServices>()
 }
 
-extension SignupUserInfoViewModel {
+extension SignupUserInfoVM {
     
     func signupCompleted(email: String, password: String, name: String) {
     
