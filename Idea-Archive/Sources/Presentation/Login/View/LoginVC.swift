@@ -4,6 +4,8 @@ import SnapKit
 
 final class LoginVC: BaseVC {
     
+    private let loginVM = LoginVM()
+    
     private let loginLabel = TitleLabel().then {
         $0.text = "LOGIN"
     }
@@ -177,7 +179,7 @@ final class LoginVC: BaseVC {
     
     @objc func loginButtonTapped(_ sender: UIButton){
         print("로그인 버튼 클릭")
-        LoginVM().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
+        loginVM.loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     @objc func findPasswordButtonTapped(_ sender: UIButton){
