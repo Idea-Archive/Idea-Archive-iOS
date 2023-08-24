@@ -1,11 +1,11 @@
 import UIKit
 import Moya
 
-class GetCertificationNumberViewModel {
+class GetCertificationNumberVM {
     let authProvider = MoyaProvider<EmailServices>()
 }
 
-extension GetCertificationNumberViewModel {
+extension GetCertificationNumberVM {
     
     func getCertificationNumber(email: String) {
     

@@ -46,7 +46,7 @@
 		786DCB1D29F81C9300228885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786DCB1B29F81C9300228885 /* LaunchScreen.storyboard */; };
 		786FB7FA2A1122C000BD3386 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB7F92A1122C000BD3386 /* Font.swift */; };
 		786FB8052A11259A00BD3386 /* UITextField+setPlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */; };
-		787211F62A777FD9008B2998 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F52A777FD9008B2998 /* LoginViewModel.swift */; };
+		787211F62A777FD9008B2998 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F52A777FD9008B2998 /* LoginVM.swift */; };
 		787211F92A778179008B2998 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787211F82A778179008B2998 /* KeyChainManager.swift */; };
 		78848A8C2A343E06001588AA /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 78848A8B2A343E06001588AA /* RxKeyboard */; };
 		78A644902A7F7B890021CC14 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78A6448F2A7F7B890021CC14 /* Moya */; };
@@ -100,7 +100,7 @@
 		786DCB1E29F81C9300228885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786FB7F92A1122C000BD3386 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		786FB8042A11259A00BD3386 /* UITextField+setPlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPlaceholderColor.swift"; sourceTree = "<group>"; };
-		787211F52A777FD9008B2998 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		787211F52A777FD9008B2998 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		787211F82A778179008B2998 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		78A644932A7F7E920021CC14 /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
 		78B6644A2A0E89DF00B8C68C /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
@@ -436,7 +436,7 @@
 		787211F42A777FC1008B2998 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				787211F52A777FD9008B2998 /* LoginViewModel.swift */,
+				787211F52A777FD9008B2998 /* LoginVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -674,7 +674,7 @@
 				785BBF022A25AC6000186DDA /* LargeTitleLabel.swift in Sources */,
 				78B6644D2A0E8A7C00B8C68C /* SecureTextField.swift in Sources */,
 				786DCB1529F81C9200228885 /* BaseVC.swift in Sources */,
-				787211F62A777FD9008B2998 /* LoginViewModel.swift in Sources */,
+				787211F62A777FD9008B2998 /* LoginVM.swift in Sources */,
 				78A644942A7F7E920021CC14 /* SignupUserInfoVM.swift in Sources */,
 				781BD2812A7739C300118B99 /* AuthServices.swift in Sources */,
 				78015C4F2A31CB7200737055 /* OTPTextField.swift in Sources */,

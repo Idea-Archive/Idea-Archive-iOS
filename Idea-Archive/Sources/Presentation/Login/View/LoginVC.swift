@@ -177,7 +177,7 @@ final class LoginVC: BaseVC {
     
     @objc func loginButtonTapped(_ sender: UIButton){
         print("로그인 버튼 클릭")
-        LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
+        LoginVM().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     @objc func findPasswordButtonTapped(_ sender: UIButton){
