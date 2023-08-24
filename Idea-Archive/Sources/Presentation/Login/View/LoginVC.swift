@@ -154,7 +154,7 @@ final class LoginVC: BaseVC {
         }
         self.socialLoginButtonStackView.snp.makeConstraints {
             $0.height.equalTo(36)
-            $0.bottom.equalToSuperview().inset(96)
+            $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(96)
             $0.centerX.equalToSuperview()
         }
         self.appleLoginButton.snp.makeConstraints{
@@ -177,7 +177,7 @@ final class LoginVC: BaseVC {
     
     @objc func loginButtonTapped(_ sender: UIButton){
         print("로그인 버튼 클릭")
-        LoginVM().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
+        LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     @objc func findPasswordButtonTapped(_ sender: UIButton){
