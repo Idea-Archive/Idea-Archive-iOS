@@ -4,4 +4,10 @@
    <FileRef
       location = "group:Idea-Archive.xcodeproj">
    </FileRef>
+<<<<<<< Updated upstream
+=======
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+>>>>>>> Stashed changes
 </Workspace>
