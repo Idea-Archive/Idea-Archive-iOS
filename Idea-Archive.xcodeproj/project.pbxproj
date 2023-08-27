@@ -3,32 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-<<<<<<< Updated upstream
-	objectVersion = 50;
-=======
 	objectVersion = 52;
->>>>>>> Stashed changes
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0383CACF33FBBA9153E2BDE4 /* EmailServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B69C18E22337FE4143926 /* EmailServices.swift */; };
-<<<<<<< Updated upstream
-=======
 		10EB0C14C3FEF16A918C9739 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D7062FF431475B3020FED47 /* Pretendard-Medium.otf */; };
->>>>>>> Stashed changes
 		11879DA5841224AE48A0CCCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015F89B637132E408BC5793D /* SceneDelegate.swift */; };
 		128199D54D451BF24D0ADD33 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F85C8DA8F61E5BD0F78E4 /* SecureTextField.swift */; };
 		166C04A89ED5BE2FBE6CCB9B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673CA544C54A9ACA39220CF /* Color.swift */; };
 		198764495588574E618F0D68 /* Idea-Archive++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C19AF371E14D8D047CFE4F /* Idea-Archive++Bundle.swift */; };
 		1C20D09BF8CB0DC13724D339 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE1310808C22597CB4F67E /* OTPTextField.swift */; };
 		237410E00186E0107C7214FE /* AdditionalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94E817B2F86823F7312209 /* AdditionalButton.swift */; };
-<<<<<<< Updated upstream
-		25C281BBF1E1D1A57A244015 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F64FBE4F603BD4E489502 /* UIColor+HexColor.swift */; };
-		2E8905AC9404DA68562E4733 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64FC15E1DF942F6E2731A3 /* AuthRequest.swift */; };
-		3115F05E0ACB0C7C45AFF930 /* UIButton+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D2F9BC0598E4FC9DBC420 /* UIButton+setImage.swift */; };
-		37F5A5992FA38BD487D8A5EB /* SignupUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E9F3F3C7393B4B295D4077 /* SignupUserInfoVC.swift */; };
-		3A91859F1A400EF47304BB51 /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2DE0D399848C0CAB4EE4C5 /* NormalTextField.swift */; };
-=======
 		24A0881AA702590A89158ADB /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B471B7D9D1FEFE4523466FBF /* Pretendard-Black.otf */; };
 		25C281BBF1E1D1A57A244015 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F64FBE4F603BD4E489502 /* UIColor+HexColor.swift */; };
 		2E8905AC9404DA68562E4733 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64FC15E1DF942F6E2731A3 /* AuthRequest.swift */; };
@@ -37,23 +23,12 @@
 		37F5A5992FA38BD487D8A5EB /* SignupUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E9F3F3C7393B4B295D4077 /* SignupUserInfoVC.swift */; };
 		3A91859F1A400EF47304BB51 /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2DE0D399848C0CAB4EE4C5 /* NormalTextField.swift */; };
 		40704C786EC80DA9FB823945 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B7AD0F71BE13A28CF5D856C /* Pretendard-Light.otf */; };
->>>>>>> Stashed changes
 		4E5A055CC3F7CE41B9473134 /* MakeNewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34722F32AFE7CD019C340165 /* MakeNewPasswordVC.swift */; };
 		4E9363FBA3D5BA51D021373C /* SmallTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D9015CD9416720514AF48D /* SmallTitleLabel.swift */; };
 		4EF9586C567B67B48B6D9123 /* CertificationNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12704C54B185CC66E9F6471F /* CertificationNumberVC.swift */; };
 		67E47DCDE2ACC5DE84C0AC07 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6372A217C2D1BA1CDD0ECF /* BaseVC.swift */; };
 		6D4BB16AC07F4F4A551E5F86 /* SuccessAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF43B23711505D3979A219 /* SuccessAuthVC.swift */; };
 		72A4E86EC5CB73B997F06197 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6966230DD4803B596C5D027A /* UIView+addSubviews.swift */; };
-<<<<<<< Updated upstream
-		74C9356166163F1CF9968547 /* FindPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */; };
-		7D2D7D3701E1447415751A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6E351BE5FF50D2A61F09A /* AppDelegate.swift */; };
-		817ACF71D5899F99641B9AEB /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399DEA07746F878F754349B /* AuthServices.swift */; };
-		A1E0B856A224EE532B508C64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99555CBDE37A64EA301AC6 /* LoginViewModel.swift */; };
-		AF527DED6310CF5E4CA7B3AE /* NextStepButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5151FB4DB77807786B675 /* NextStepButton.swift */; };
-		B3A3ACBE9021B2694BD5FC62 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E9964B0EB74537D35C8128 /* KeyChainManager.swift */; };
-		B8586F8CB7531BC497A612AB /* UITextField+setPlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4126A30ED97CF3DC51BEDF5 /* UITextField+setPlaceholderColor.swift */; };
-		B8AFE9F5D4729F7E6FF22BA6 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67D51A8D9E5CA6CD063DB3 /* Font.swift */; };
-=======
 		7461290A4B2C28F92A8FE0E1 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFAC875880F977FD4BA5DBB3 /* Pretendard-ExtraLight.otf */; };
 		74C9356166163F1CF9968547 /* FindPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */; };
 		750E140D8E01AB78E8052615 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C4445BC200D32E99C47B667 /* Pretendard-Thin.otf */; };
@@ -72,7 +47,6 @@
 		B8586F8CB7531BC497A612AB /* UITextField+setPlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4126A30ED97CF3DC51BEDF5 /* UITextField+setPlaceholderColor.swift */; };
 		B8AFE9F5D4729F7E6FF22BA6 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67D51A8D9E5CA6CD063DB3 /* Font.swift */; };
 		B9F829BB7D1C164D011D9927 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = AD4978E1621D96CEA9DBC708 /* Then */; };
->>>>>>> Stashed changes
 		BBA1D639406AB34444B31467 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C4B24CC0622E24607B2F6 /* BaseURL.swift */; };
 		C87C83FCFEB1B6A49E133A5A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0CEFBD097EE908FC58D9A /* Auth.swift */; };
 		CA51E464115C8BF35C4E9E3F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEF179A8950045E9D3CD1C /* LoginVC.swift */; };
@@ -80,18 +54,13 @@
 		CBEC86B98A1C798DA08A82D5 /* LargeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */; };
 		D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */; };
 		D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */; };
-<<<<<<< Updated upstream
-		E64B156484623581A978A530 /* CertificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D4EBF31FD543166451777 /* CertificationVM.swift */; };
-		E6CB3F0D72B4DC1F316E17A9 /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7EFED76D76AD88738160E1 /* EmailRequest.swift */; };
 		EF0DC7253F781AD52F264C6C /* CertificationNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */; };
-=======
 		D5F4766131D651BDF3B6EC6B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1E220EBDBCC0364F59C428C7 /* Moya */; };
 		E64B156484623581A978A530 /* CertificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D4EBF31FD543166451777 /* CertificationVM.swift */; };
 		E6CB3F0D72B4DC1F316E17A9 /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7EFED76D76AD88738160E1 /* EmailRequest.swift */; };
 		E95C2B904656809BD18FB855 /* TuistBundle+IdeaArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37DE8244F06D77EAFCD152 /* TuistBundle+IdeaArchive.swift */; };
 		ED579A52BDED8344FD7A5E45 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29B58F9135766D6402E19BFA /* Pretendard-Regular.otf */; };
 		EF1A38578DF83A332A01269A /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC04BFA627E622C8D18DE62A /* Pretendard-SemiBold.otf */; };
->>>>>>> Stashed changes
 		FFAC33C9A4148C5F52241BBA /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95643DF198C9A1858A872C6 /* TitleLabel.swift */; };
 /* End PBXBuildFile section */
 
@@ -115,14 +84,6 @@
 		12704C54B185CC66E9F6471F /* CertificationNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberVC.swift; sourceTree = "<group>"; };
 		18F6E351BE5FF50D2A61F09A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C3F64FBE4F603BD4E489502 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-		2F94E817B2F86823F7312209 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
-		2FFF43B23711505D3979A219 /* SuccessAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAuthVC.swift; sourceTree = "<group>"; };
-		34722F32AFE7CD019C340165 /* MakeNewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNewPasswordVC.swift; sourceTree = "<group>"; };
-		5399DEA07746F878F754349B /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
-		54EC4E61868936934A76D1E7 /* Idea-Archive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Idea-Archive-Info.plist"; sourceTree = "<group>"; };
-		5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberVC.swift; sourceTree = "<group>"; };
-=======
 		29B58F9135766D6402E19BFA /* Pretendard-Regular.otf */ = {isa = PBXFileReference; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		2F94E817B2F86823F7312209 /* AdditionalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalButton.swift; sourceTree = "<group>"; };
 		2FFF43B23711505D3979A219 /* SuccessAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAuthVC.swift; sourceTree = "<group>"; };
@@ -130,36 +91,10 @@
 		3F37DE8244F06D77EAFCD152 /* TuistBundle+IdeaArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+IdeaArchive.swift"; sourceTree = "<group>"; };
 		44B5313C6E6CEFB58133E892 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		5399DEA07746F878F754349B /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		688E020F3082A96DA3089D19 /* Idea_Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idea_Archive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6966230DD4803B596C5D027A /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		6C67D51A8D9E5CA6CD063DB3 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		6D7EFED76D76AD88738160E1 /* EmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRequest.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-		7D6372A217C2D1BA1CDD0ECF /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		84A5151FB4DB77807786B675 /* NextStepButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStepButton.swift; sourceTree = "<group>"; };
-		8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleLabel.swift; sourceTree = "<group>"; };
-		9673CA544C54A9ACA39220CF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		98EEF179A8950045E9D3CD1C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		9DB0CEFBD097EE908FC58D9A /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
-		A4126A30ED97CF3DC51BEDF5 /* UITextField+setPlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+setPlaceholderColor.swift"; sourceTree = "<group>"; };
-		A7FC3A37BEFE935E025A8FEF /* UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegate.swift; sourceTree = "<group>"; };
-		AC6D4EBF31FD543166451777 /* CertificationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationVM.swift; sourceTree = "<group>"; };
-		B22D2F9BC0598E4FC9DBC420 /* UIButton+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setImage.swift"; sourceTree = "<group>"; };
-		B2E9F3F3C7393B4B295D4077 /* SignupUserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVC.swift; sourceTree = "<group>"; };
-		B95643DF198C9A1858A872C6 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
-		BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailAuthVC.swift; sourceTree = "<group>"; };
-		C2D9015CD9416720514AF48D /* SmallTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTitleLabel.swift; sourceTree = "<group>"; };
-		C5E9964B0EB74537D35C8128 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
-		C60F85C8DA8F61E5BD0F78E4 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
-		CB8B69C18E22337FE4143926 /* EmailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailServices.swift; sourceTree = "<group>"; };
-		CFAE1310808C22597CB4F67E /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
-		E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordVC.swift; sourceTree = "<group>"; };
-		EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
-		FA99555CBDE37A64EA301AC6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		FC2DE0D399848C0CAB4EE4C5 /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
-		FE64FC15E1DF942F6E2731A3 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
-=======
 		73A35CAAA3B02ADB95AA8D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D6372A217C2D1BA1CDD0ECF /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		84A5151FB4DB77807786B675 /* NextStepButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStepButton.swift; sourceTree = "<group>"; };
@@ -196,7 +131,6 @@
 		FC2DE0D399848C0CAB4EE4C5 /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
 		FE64FC15E1DF942F6E2731A3 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
 		FF53AA69729EAB96614CC44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,15 +138,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
-=======
 				82FCA19A2991498115F77AFB /* IQKeyboardManager in Frameworks */,
 				841937DD459FEE8EEF5C5498 /* SnapKit in Frameworks */,
 				D5F4766131D651BDF3B6EC6B /* Moya in Frameworks */,
 				A49CFB6814F9AB05D489F77D /* RxKeyboard in Frameworks */,
 				B9F829BB7D1C164D011D9927 /* Then in Frameworks */,
 				805084F3292AFB6504039E46 /* Pods_Idea_Archive.framework in Frameworks */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +194,6 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-=======
 		1249A10B02AA8081E66034B3 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +202,6 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 		1F2837C23E3254221546C301 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,19 +230,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-		3745CC0184B2F85018562455 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				5399DEA07746F878F754349B /* AuthServices.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		3B687B9EAD2A51CE4EFBE867 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-=======
 		2E69CF237F476B102365E7EE /* Pretendard */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,7 +275,6 @@
 		3B687B9EAD2A51CE4EFBE867 /* Model */ = {
 			isa = PBXGroup;
 			children = (
->>>>>>> Stashed changes
 				0E614796FBB80FC7B974FFA6 /* Auth */,
 				DD8B5B57E35E2A4E3715532B /* KeyChain */,
 			);
@@ -370,10 +284,7 @@
 		3D98114328CC133965BD7809 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-=======
 				CADEBDF6C2C75E31E688AFB5 /* Pods_Idea_Archive.framework */,
->>>>>>> Stashed changes
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -441,10 +352,6 @@
 			children = (
 				DB47A17ADBBAA0A70B91629A /* View */,
 				CE3E51840CD3F459DCE42C74 /* ViewModel */,
-<<<<<<< Updated upstream
-				5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */,
-=======
->>>>>>> Stashed changes
 			);
 			path = CertificationNumber;
 			sourceTree = "<group>";
@@ -461,11 +368,7 @@
 		780459B844D1DE26A9A484DC /* Derived */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-				EFCA2A82D933A39E90F9359C /* InfoPlists */,
-=======
 				34D395C3E10381B860063301 /* Sources */,
->>>>>>> Stashed changes
 			);
 			path = Derived;
 			sourceTree = "<group>";
@@ -495,8 +398,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-=======
 		9EC5CCF4BB0D27D79E9F683B /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,17 +406,13 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 		A1FC39810F29D4C2388732FF = {
 			isa = PBXGroup;
 			children = (
 				B46121F78E686EFE137DF804 /* Project */,
 				3D98114328CC133965BD7809 /* Frameworks */,
 				699F16C27D85F3646FF4A32E /* Products */,
-<<<<<<< Updated upstream
-=======
 				363219F351B420CD762CB687 /* Pods */,
->>>>>>> Stashed changes
 			);
 			sourceTree = "<group>";
 		};
@@ -565,8 +462,6 @@
 			path = Label;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-=======
 		B7A31EB6B93062F22542E593 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,7 +470,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 		BF82DF2815A2350A99CA29D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,8 +478,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-=======
 		C43461F90383F2B3155C5257 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,7 +486,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 		C454D4EE94E945E0E8665F08 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,8 +506,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-=======
 		CF16172691FA8106D0676C73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,7 +516,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
->>>>>>> Stashed changes
 		DB47A17ADBBAA0A70B91629A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -692,17 +580,6 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
-		EFCA2A82D933A39E90F9359C /* InfoPlists */ = {
-			isa = PBXGroup;
-			children = (
-				54EC4E61868936934A76D1E7 /* Idea-Archive-Info.plist */,
-			);
-			path = InfoPlists;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> Stashed changes
 		F11EF062597DB00EE60555E5 /* FindPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -750,13 +627,9 @@
 		FC3DD23A5C19E946E7B9F95B /* Idea-Archive */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-				C454D4EE94E945E0E8665F08 /* Sources */,
-=======
 				CF16172691FA8106D0676C73 /* Resources */,
 				C454D4EE94E945E0E8665F08 /* Sources */,
 				9EC5CCF4BB0D27D79E9F683B /* Support */,
->>>>>>> Stashed changes
 			);
 			path = "Idea-Archive";
 			sourceTree = "<group>";
@@ -768,26 +641,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A21D5070097507300BD8E3 /* Build configuration list for PBXNativeTarget "Idea-Archive" */;
 			buildPhases = (
-<<<<<<< Updated upstream
-=======
 				BF32B1E87960EE2B649AC80D /* [CP] Check Pods Manifest.lock */,
->>>>>>> Stashed changes
 				74E4C8A7200A8273CFA41E3A /* Sources */,
 				24C4F4A2760024CD5284F139 /* Resources */,
 				D2858ED41527F07BCC86CF8F /* Embed Frameworks */,
 				2A942000E63EF80B4A488F43 /* Frameworks */,
-<<<<<<< Updated upstream
-=======
 				DDA668698A9ED8402FD3A524 /* [CP] Embed Pods Frameworks */,
->>>>>>> Stashed changes
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Idea-Archive";
-<<<<<<< Updated upstream
-=======
 			packageProductDependencies = (
 				1057B31C4989939DA00BF7A0 /* IQKeyboardManager */,
 				EC93BFFA0E1F7685F4A35C30 /* SnapKit */,
@@ -795,7 +660,6 @@
 				D09D6D01F8C7EFA0ACEC3355 /* RxKeyboard */,
 				AD4978E1621D96CEA9DBC708 /* Then */,
 			);
->>>>>>> Stashed changes
 			productName = Idea_Archive;
 			productReference = 688E020F3082A96DA3089D19 /* Idea_Archive.app */;
 			productType = "com.apple.product-type.application";
@@ -819,8 +683,6 @@
 				en,
 			);
 			mainGroup = A1FC39810F29D4C2388732FF;
-<<<<<<< Updated upstream
-=======
 			packageReferences = (
 				9AB0A47F21C2C91D0CA8C4CF /* XCRemoteSwiftPackageReference "Moya.git" */,
 				69FCE6005FB9D3E48181C663 /* XCRemoteSwiftPackageReference "RxKeyboard.git" */,
@@ -828,7 +690,6 @@
 				05828FC01CE0E326C02BAFD6 /* XCRemoteSwiftPackageReference "Then" */,
 				77F1658B8BAFF22E247F4CCE /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */,
 			);
->>>>>>> Stashed changes
 			productRefGroup = 699F16C27D85F3646FF4A32E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -843,8 +704,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
-=======
 				8ED6DA05FEBBECF07A7EA370 /* Assets.xcassets in Resources */,
 				24A0881AA702590A89158ADB /* Pretendard-Black.otf in Resources */,
 				A67C578D893D78740E935D44 /* Pretendard-Bold.otf in Resources */,
@@ -856,7 +715,6 @@
 				EF1A38578DF83A332A01269A /* Pretendard-SemiBold.otf in Resources */,
 				750E140D8E01AB78E8052615 /* Pretendard-Thin.otf in Resources */,
 				B35617A9C9DDB48A0C976F77 /* LaunchScreen.storyboard in Resources */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,10 +767,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
-=======
 				E95C2B904656809BD18FB855 /* TuistBundle+IdeaArchive.swift in Sources */,
->>>>>>> Stashed changes
 				7D2D7D3701E1447415751A45 /* AppDelegate.swift in Sources */,
 				11879DA5841224AE48A0CCCA /* SceneDelegate.swift in Sources */,
 				BBA1D639406AB34444B31467 /* BaseURL.swift in Sources */,
@@ -937,10 +792,6 @@
 				CA51E464115C8BF35C4E9E3F /* LoginVC.swift in Sources */,
 				A1E0B856A224EE532B508C64 /* LoginViewModel.swift in Sources */,
 				4E5A055CC3F7CE41B9473134 /* MakeNewPasswordVC.swift in Sources */,
-<<<<<<< Updated upstream
-				EF0DC7253F781AD52F264C6C /* CertificationNumberVC.swift in Sources */,
-=======
->>>>>>> Stashed changes
 				4EF9586C567B67B48B6D9123 /* CertificationNumberVC.swift in Sources */,
 				E64B156484623581A978A530 /* CertificationVM.swift in Sources */,
 				D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */,
@@ -958,8 +809,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-<<<<<<< Updated upstream
-=======
 /* Begin PBXVariantGroup section */
 		DDDB5B64664D1C04668FB0BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -971,7 +820,6 @@
 		};
 /* End PBXVariantGroup section */
 
->>>>>>> Stashed changes
 /* Begin XCBuildConfiguration section */
 		9506C6F6F865F76C6A794ABB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1028,30 +876,18 @@
 		};
 		D01AFE71EF70E0834A5F73AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-<<<<<<< Updated upstream
-=======
 			baseConfigurationReference = CF91046C2DF7424ED7DF5B96 /* Pods-Idea-Archive.debug.xcconfig */;
->>>>>>> Stashed changes
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
-<<<<<<< Updated upstream
-				INFOPLIST_FILE = "Derived/InfoPlists/Idea-Archive-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.19.0;
-=======
 				INFOPLIST_FILE = "Idea-Archive/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
->>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< Updated upstream
 				PRODUCT_BUNDLE_IDENTIFIER = "class.Idea-Archive";
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = ".class.Idea-Archive";
->>>>>>> Stashed changes
 				PRODUCT_NAME = Idea_Archive;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1130,22 +966,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
-<<<<<<< Updated upstream
-				INFOPLIST_FILE = "Derived/InfoPlists/Idea-Archive-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.19.0;
-=======
 				INFOPLIST_FILE = "Idea-Archive/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
->>>>>>> Stashed changes
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-<<<<<<< Updated upstream
 				PRODUCT_BUNDLE_IDENTIFIER = "class.Idea-Archive";
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = ".class.Idea-Archive";
->>>>>>> Stashed changes
 				PRODUCT_NAME = Idea_Archive;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1179,8 +1006,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-<<<<<<< Updated upstream
-=======
 
 /* Begin XCRemoteSwiftPackageReference section */
 		05828FC01CE0E326C02BAFD6 /* XCRemoteSwiftPackageReference "Then" */ = {
@@ -1247,7 +1072,6 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
->>>>>>> Stashed changes
 	};
 	rootObject = 1C16B962385C9394F8327841 /* Project object */;
 }
