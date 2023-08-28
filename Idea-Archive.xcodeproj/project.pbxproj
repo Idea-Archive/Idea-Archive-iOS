@@ -269,6 +269,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3D98114328CC133965BD7809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5F8ECE4F6E8DFDE66B318F00 /* Email */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				B46121F78E686EFE137DF804 /* Project */,
+				3D98114328CC133965BD7809 /* Frameworks */,
 				699F16C27D85F3646FF4A32E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -662,11 +670,12 @@
 			);
 			mainGroup = A1FC39810F29D4C2388732FF;
 			packageReferences = (
-				9AB0A47F21C2C91D0CA8C4CF /* XCRemoteSwiftPackageReference "Moya.git" */,
-				69FCE6005FB9D3E48181C663 /* XCRemoteSwiftPackageReference "RxKeyboard.git" */,
-				4143C1030F1C98255FA646EE /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				9AB0A47F21C2C91D0CA8C4CF /* XCRemoteSwiftPackageReference "Moya" */,
+				69FCE6005FB9D3E48181C663 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				4143C1030F1C98255FA646EE /* XCRemoteSwiftPackageReference "SnapKit" */,
 				05828FC01CE0E326C02BAFD6 /* XCRemoteSwiftPackageReference "Then" */,
-				77F1658B8BAFF22E247F4CCE /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */,
+				77F1658B8BAFF22E247F4CCE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				84C6680734049AD78B70A933 /* XCRemoteSwiftPackageReference "AEOTPTextField" */,
 			);
 			productRefGroup = 699F16C27D85F3646FF4A32E /* Products */;
 			projectDirPath = "";
@@ -951,7 +960,7 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		4143C1030F1C98255FA646EE /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		4143C1030F1C98255FA646EE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -959,7 +968,7 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		69FCE6005FB9D3E48181C663 /* XCRemoteSwiftPackageReference "RxKeyboard.git" */ = {
+		69FCE6005FB9D3E48181C663 /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard.git";
 			requirement = {
@@ -967,7 +976,7 @@
 				minimumVersion = 2.0.1;
 			};
 		};
-		77F1658B8BAFF22E247F4CCE /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */ = {
+		77F1658B8BAFF22E247F4CCE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -975,7 +984,15 @@
 				minimumVersion = 6.5.0;
 			};
 		};
-		9AB0A47F21C2C91D0CA8C4CF /* XCRemoteSwiftPackageReference "Moya.git" */ = {
+		84C6680734049AD78B70A933 /* XCRemoteSwiftPackageReference "AEOTPTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uuuunseo/AEOTPTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		9AB0A47F21C2C91D0CA8C4CF /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {

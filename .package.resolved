@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "aeotptextfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uuuunseo/AEOTPTextField.git",
+      "state" : {
+        "revision" : "ed7a17955506c00ed96e33a451821b5ae1e7042c",
+        "version" : "1.2.7"
+      }
+    },
+    {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",

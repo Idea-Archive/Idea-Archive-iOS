@@ -27,6 +27,10 @@ let project = Project(
             url: "https://github.com/devxoul/Then",
             requirement: .upToNextMajor(from: "2")
         ),
+        .package(
+            url: "https://github.com/uuuunseo/AEOTPTextField.git",
+            .upToNextMajor(from: "1.0.0")
+        )
     ],
     settings: nil,
     targets: [
