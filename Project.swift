@@ -44,7 +44,8 @@ let project = Project(
                 .package(product: "SnapKit"),
                 .package(product: "Moya"),
                 .package(product: "RxKeyboard"),
-                .package(product: "Then")
+                .package(product: "Then"),
+                .package(product: "AEOTPTextField")
             ]
         )
     ],
