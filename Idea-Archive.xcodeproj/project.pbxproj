@@ -33,7 +33,7 @@
 		74C9356166163F1CF9968547 /* FindPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */; };
 		750E140D8E01AB78E8052615 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C4445BC200D32E99C47B667 /* Pretendard-Thin.otf */; };
 		7D2D7D3701E1447415751A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6E351BE5FF50D2A61F09A /* AppDelegate.swift */; };
-		805084F3292AFB6504039E46 /* Pods_Idea_Archive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADEBDF6C2C75E31E688AFB5 /* Pods_Idea_Archive.framework */; };
+		7F93E95314ED79137F496B0F /* AEOTPTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 152B14AB42E4A4AA0CDE1871 /* AEOTPTextField */; };
 		817ACF71D5899F99641B9AEB /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399DEA07746F878F754349B /* AuthServices.swift */; };
 		82FCA19A2991498115F77AFB /* IQKeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 1057B31C4989939DA00BF7A0 /* IQKeyboardManager */; };
 		841937DD459FEE8EEF5C5498 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC93BFFA0E1F7685F4A35C30 /* SnapKit */; };
@@ -54,12 +54,12 @@
 		CBEC86B98A1C798DA08A82D5 /* LargeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */; };
 		D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */; };
 		D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */; };
-		EF0DC7253F781AD52F264C6C /* CertificationNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */; };
 		D5F4766131D651BDF3B6EC6B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1E220EBDBCC0364F59C428C7 /* Moya */; };
 		E64B156484623581A978A530 /* CertificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D4EBF31FD543166451777 /* CertificationVM.swift */; };
 		E6CB3F0D72B4DC1F316E17A9 /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7EFED76D76AD88738160E1 /* EmailRequest.swift */; };
 		E95C2B904656809BD18FB855 /* TuistBundle+IdeaArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37DE8244F06D77EAFCD152 /* TuistBundle+IdeaArchive.swift */; };
 		ED579A52BDED8344FD7A5E45 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29B58F9135766D6402E19BFA /* Pretendard-Regular.otf */; };
+		EF0DC7253F781AD52F264C6C /* CertificationNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */; };
 		EF1A38578DF83A332A01269A /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC04BFA627E622C8D18DE62A /* Pretendard-SemiBold.otf */; };
 		FFAC33C9A4148C5F52241BBA /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95643DF198C9A1858A872C6 /* TitleLabel.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +91,7 @@
 		3F37DE8244F06D77EAFCD152 /* TuistBundle+IdeaArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+IdeaArchive.swift"; sourceTree = "<group>"; };
 		44B5313C6E6CEFB58133E892 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		5399DEA07746F878F754349B /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberVC.swift; sourceTree = "<group>"; };
 		688E020F3082A96DA3089D19 /* Idea_Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idea_Archive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6966230DD4803B596C5D027A /* UIView+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
 		6C67D51A8D9E5CA6CD063DB3 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -119,12 +120,9 @@
 		C2D9015CD9416720514AF48D /* SmallTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTitleLabel.swift; sourceTree = "<group>"; };
 		C5E9964B0EB74537D35C8128 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		C60F85C8DA8F61E5BD0F78E4 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
-		CADEBDF6C2C75E31E688AFB5 /* Pods_Idea_Archive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idea_Archive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8B69C18E22337FE4143926 /* EmailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailServices.swift; sourceTree = "<group>"; };
-		CF91046C2DF7424ED7DF5B96 /* Pods-Idea-Archive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idea-Archive.debug.xcconfig"; path = "Target Support Files/Pods-Idea-Archive/Pods-Idea-Archive.debug.xcconfig"; sourceTree = "<group>"; };
 		CFAE1310808C22597CB4F67E /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordVC.swift; sourceTree = "<group>"; };
-		E8D205ED685D71DAF0614A0F /* Pods-Idea-Archive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idea-Archive.release.xcconfig"; path = "Target Support Files/Pods-Idea-Archive/Pods-Idea-Archive.release.xcconfig"; sourceTree = "<group>"; };
 		EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
 		EFAC875880F977FD4BA5DBB3 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		FA99555CBDE37A64EA301AC6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -143,7 +141,7 @@
 				D5F4766131D651BDF3B6EC6B /* Moya in Frameworks */,
 				A49CFB6814F9AB05D489F77D /* RxKeyboard in Frameworks */,
 				B9F829BB7D1C164D011D9927 /* Then in Frameworks */,
-				805084F3292AFB6504039E46 /* Pods_Idea_Archive.framework in Frameworks */,
+				7F93E95314ED79137F496B0F /* AEOTPTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,16 +252,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		363219F351B420CD762CB687 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CF91046C2DF7424ED7DF5B96 /* Pods-Idea-Archive.debug.xcconfig */,
-				E8D205ED685D71DAF0614A0F /* Pods-Idea-Archive.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		3745CC0184B2F85018562455 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,14 +267,6 @@
 				DD8B5B57E35E2A4E3715532B /* KeyChain */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		3D98114328CC133965BD7809 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CADEBDF6C2C75E31E688AFB5 /* Pods_Idea_Archive.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5F8ECE4F6E8DFDE66B318F00 /* Email */ = {
@@ -352,6 +332,7 @@
 			children = (
 				DB47A17ADBBAA0A70B91629A /* View */,
 				CE3E51840CD3F459DCE42C74 /* ViewModel */,
+				5C78072333D830A07CA7CAA1 /* CertificationNumberVC.swift */,
 			);
 			path = CertificationNumber;
 			sourceTree = "<group>";
@@ -410,9 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				B46121F78E686EFE137DF804 /* Project */,
-				3D98114328CC133965BD7809 /* Frameworks */,
 				699F16C27D85F3646FF4A32E /* Products */,
-				363219F351B420CD762CB687 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -641,12 +620,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A21D5070097507300BD8E3 /* Build configuration list for PBXNativeTarget "Idea-Archive" */;
 			buildPhases = (
-				BF32B1E87960EE2B649AC80D /* [CP] Check Pods Manifest.lock */,
 				74E4C8A7200A8273CFA41E3A /* Sources */,
 				24C4F4A2760024CD5284F139 /* Resources */,
 				D2858ED41527F07BCC86CF8F /* Embed Frameworks */,
 				2A942000E63EF80B4A488F43 /* Frameworks */,
-				DDA668698A9ED8402FD3A524 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -659,6 +636,7 @@
 				1E220EBDBCC0364F59C428C7 /* Moya */,
 				D09D6D01F8C7EFA0ACEC3355 /* RxKeyboard */,
 				AD4978E1621D96CEA9DBC708 /* Then */,
+				152B14AB42E4A4AA0CDE1871 /* AEOTPTextField */,
 			);
 			productName = Idea_Archive;
 			productReference = 688E020F3082A96DA3089D19 /* Idea_Archive.app */;
@@ -720,48 +698,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		BF32B1E87960EE2B649AC80D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Idea-Archive-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DDA668698A9ED8402FD3A524 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Idea-Archive/Pods-Idea-Archive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Idea-Archive/Pods-Idea-Archive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idea-Archive/Pods-Idea-Archive-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		74E4C8A7200A8273CFA41E3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -792,6 +728,7 @@
 				CA51E464115C8BF35C4E9E3F /* LoginVC.swift in Sources */,
 				A1E0B856A224EE532B508C64 /* LoginViewModel.swift in Sources */,
 				4E5A055CC3F7CE41B9473134 /* MakeNewPasswordVC.swift in Sources */,
+				EF0DC7253F781AD52F264C6C /* CertificationNumberVC.swift in Sources */,
 				4EF9586C567B67B48B6D9123 /* CertificationNumberVC.swift in Sources */,
 				E64B156484623581A978A530 /* CertificationVM.swift in Sources */,
 				D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */,
@@ -876,7 +813,6 @@
 		};
 		D01AFE71EF70E0834A5F73AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF91046C2DF7424ED7DF5B96 /* Pods-Idea-Archive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -887,7 +823,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "class.Idea-Archive";
+				PRODUCT_BUNDLE_IDENTIFIER = ".class.Idea-Archive";
 				PRODUCT_NAME = Idea_Archive;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -961,7 +897,6 @@
 		};
 		FE896861D4ECC2FAEFDBCC90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8D205ED685D71DAF0614A0F /* Pods-Idea-Archive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -972,7 +907,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "class.Idea-Archive";
+				PRODUCT_BUNDLE_IDENTIFIER = ".class.Idea-Archive";
 				PRODUCT_NAME = Idea_Archive;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -1054,6 +989,10 @@
 		1057B31C4989939DA00BF7A0 /* IQKeyboardManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = IQKeyboardManager;
+		};
+		152B14AB42E4A4AA0CDE1871 /* AEOTPTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AEOTPTextField;
 		};
 		1E220EBDBCC0364F59C428C7 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
