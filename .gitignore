@@ -135,5 +135,6 @@ iOSInjectionProject/
 ### SwiftPackageManager ###
 Packages
 *.xcodeproj
+*.xcodeproj/project.pbxproj
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
