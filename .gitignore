@@ -135,6 +135,5 @@ iOSInjectionProject/
 ### SwiftPackageManager ###
 Packages
 *.xcodeproj
-*.pbxproj binary merge=union
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
