@@ -24,7 +24,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -134,5 +135,7 @@ iOSInjectionProject/
 
 ### SwiftPackageManager ###
 Packages
+*.xcodeproj
+.package.resolved
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpackagemanager,swift,xcode,macos,git
