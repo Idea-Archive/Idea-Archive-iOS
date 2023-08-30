@@ -153,26 +153,31 @@ final class LoginVC: BaseVC {
             $0.centerX.equalTo(view.snp.centerX)
         }
         self.socialLoginButtonStackView.snp.makeConstraints {
-            $0.top.equalTo(self.loginButton.snp.bottom).offset(253)
-            $0.leading.trailing.equalToSuperview().inset(80)
+            $0.height.equalTo(36)
+            $0.bottom.equalToSuperview().inset(96)
+            $0.centerX.equalToSuperview()
         }
         self.appleLoginButton.snp.makeConstraints{
-            $0.height.width.equalTo(36)
+            $0.height.equalToSuperview()
+            $0.width.equalTo(36)
         }
         self.googleLoginButton.snp.makeConstraints{
-            $0.height.width.equalTo(36)
+            $0.height.equalToSuperview()
+            $0.width.equalTo(36)
         }
         self.kakaoLoginButton.snp.makeConstraints{
-            $0.height.width.equalTo(36)
+            $0.height.equalToSuperview()
+            $0.width.equalTo(36)
         }
         self.githubLoginButton.snp.makeConstraints{
-            $0.height.width.equalTo(36)
+            $0.height.equalToSuperview()
+            $0.width.equalTo(36)
         }
     }
     
     @objc func loginButtonTapped(_ sender: UIButton){
         print("로그인 버튼 클릭")
-        LoginViewModel().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
+        LoginVM().loginCompleted(email: idTextField.text ?? "", password: passwordTextField.text ?? "")
     }
     
     @objc func findPasswordButtonTapped(_ sender: UIButton){
@@ -209,3 +214,4 @@ extension LoginVC: UITextFieldDelegate{
         }
     }
 }
+
