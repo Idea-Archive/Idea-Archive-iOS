@@ -2,10 +2,10 @@ import Foundation
 import Moya
 
 enum AuthServices {
-    case signup(param: SignupRequest)
-    case login(param: LoginRequest)
-    case logout(param: LogoutRequest)
-    case refreshToken(param: RefreshTokenRequest)
+    case signup(signupRequest: SignupRequest)
+    case login(loginRequest: LoginRequest)
+    case logout(logoutRequest: String)
+    case refreshToken(refreshTokenRequest: String)
 }
 extension AuthServices: TargetType {
     
@@ -42,18 +42,9 @@ extension AuthServices: TargetType {
     var task: Task {
         switch self {
         case .signup(let param):
-            let params : [String: String] = [
-                "email" : param.email,
-                "password" : param.password,
-                "name": param.name
-            ]
-            return .requestJSONEncodable(params)
+            return .requestJSONEncodable(param)
         case .login(let param):
-            let params : [String: String] = [
-                "email" : param.email,
-                "password" : param.password
-            ]
-            return .requestJSONEncodable(params)
+            return .requestJSONEncodable(param)
         default:
             return .requestPlain
         }
@@ -62,9 +53,9 @@ extension AuthServices: TargetType {
     var headers: [String : String]? {
         switch self {
         case .logout(let param):
-            return ["Authorization": param.accessToken]
+            return ["Authorization": param]
         case .refreshToken(let param):
-            return ["RefreshToken": param.refreshToken]
+            return ["RefreshToken": param]
         default:
             return ["Content-Type": "application/json"]
         }

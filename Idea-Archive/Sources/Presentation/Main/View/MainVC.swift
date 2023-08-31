@@ -1,6 +1,6 @@
 import UIKit
 
-final class MainVC: BaseViewController {
+final class MainVC: BaseVC {
     let majors = ["FrontEnd", "BackEnd", "Android", "iOS", "Design", "DevOps"]
     
     private let flowLayout = UICollectionViewFlowLayout().then {

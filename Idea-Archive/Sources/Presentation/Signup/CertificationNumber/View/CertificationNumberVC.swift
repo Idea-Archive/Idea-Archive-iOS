@@ -6,7 +6,7 @@ import RxSwift
 import RxKeyboard
 import RxCocoa
 
-final class CertificationNumberViewController: BaseViewController {
+final class CertificationNumberVC: BaseVC {
     
     let disposeBag = DisposeBag()
     
@@ -78,7 +78,6 @@ final class CertificationNumberViewController: BaseViewController {
     }
     
     func setUpOutputBinding() {
-        
         RxKeyboard.instance.visibleHeight
             .skip(1)    // 초기 값 버리기
             .drive(onNext: { keyboardVisibleHeight in
@@ -89,9 +88,12 @@ final class CertificationNumberViewController: BaseViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    
+    
 }
 
-extension CertificationNumberViewController: AEOTPTextFieldDelegate, UITextFieldDelegate {
+extension CertificationNumberVC: AEOTPTextFieldDelegate, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -103,7 +105,7 @@ extension CertificationNumberViewController: AEOTPTextFieldDelegate, UITextField
     }
     
     func didUserFinishEnter(the code: String) {
-        print(code)
+        print(code.count)
     }
     
     func textFieldDidChangeSelection(_ textField: AEOTPTextField) {

@@ -2,7 +2,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class FindPasswordViewController: BaseViewController {
+final class FindPasswordVC: BaseVC {
     
     private let changePasswordLabel = LargeTitleLabel().then{
         $0.text = "비밀번호를 분실하셨다면, \n변경할 수 있어요!"
@@ -34,7 +34,7 @@ final class FindPasswordViewController: BaseViewController {
     }
     
     @objc func signupButtonTapped(_ sender: UIButton){
-        let vc = SignupViewController()
+        let vc = SignupVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -56,7 +56,7 @@ final class FindPasswordViewController: BaseViewController {
     }
 }
 
-extension FindPasswordViewController: UITextFieldDelegate{
+extension FindPasswordVC: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

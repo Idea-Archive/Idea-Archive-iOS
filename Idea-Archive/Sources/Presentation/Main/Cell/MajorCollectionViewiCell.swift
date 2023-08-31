@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 import Then
 
-final class MainCell: UICollectionViewCell {
+final class MajorCollectionViewCell: UICollectionViewCell {
     static let id = "MainCell"
     
     let majorSelectButton = UIButton().then {
@@ -12,6 +12,7 @@ final class MainCell: UICollectionViewCell {
         $0.layer.borderColor = UIColor(rgb: 0xE6E6E6).cgColor
         $0.titleLabel?.font = .I_A(size: 12, family: .medium)
         $0.backgroundColor = .white
+        $0.titleEdgeInsets = UIEdgeInsets(top: 6, left: 12, bottom: 6, right: 12)
     }
     
     @available(*, unavailable)

@@ -2,7 +2,7 @@ import Foundation
 
 extension Bundle {
     var baseAPIKey: String {
-        guard let file = self.path(forResource: "URLInfo", ofType: "plist") else { return ""}
+        guard let file = self.path(forResource: "BaseURL", ofType: "plist") else { return ""}
         
         guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
         guard let key = resource["Base-API-KEY"] as? String else {
@@ -12,7 +12,7 @@ extension Bundle {
     }
     
     var testAPIKey: String {
-        guard let file = self.path(forResource: "URLInfo", ofType: "plist") else { return ""}
+        guard let file = self.path(forResource: "BaseURL", ofType: "plist") else { return ""}
         
         guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
         guard let key = resource["Test-API-KEY"] as? String else {
@@ -20,5 +20,4 @@ extension Bundle {
         }
         return key
     }
-    
 }
