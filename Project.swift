@@ -44,7 +44,7 @@ let project = Project(
             sources: ["\(projectName)/Sources/**"],
             resources: ["\(projectName)/Resources/**"],
             dependencies: [
-                .package(product: "IQKeyboardManager"),
+                .package(product: "IQKeyboardManagerSwift"),
                 .package(product: "SnapKit"),
                 .package(product: "Moya"),
                 .package(product: "RxKeyboard"),
