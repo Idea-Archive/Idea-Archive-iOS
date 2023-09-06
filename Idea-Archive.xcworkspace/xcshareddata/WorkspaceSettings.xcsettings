@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Base-API-KEY</key>
-	<string>https://port-0-idea-archive-server-jvvy2blm47cjwc.sel5.cloudtype.app/</string>
+	<key>IDEWorkspaceSharedSettings_AutocreateContextsIfNeeded</key>
+	<false/>
 </dict>
 </plist>

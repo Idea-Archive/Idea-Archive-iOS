@@ -38,7 +38,6 @@ class BaseVC: UIViewController {
         }
     }
     
-    
     func addView() {}
     func setup() {}
     func setLayout() {}

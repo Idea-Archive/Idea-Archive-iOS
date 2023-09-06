@@ -1,14 +1,14 @@
 import UIKit
 import Moya
 
-class LoginViewModel {
+class LoginVM {
     let authProvider = MoyaProvider<AuthServices>()
     var authData: LoginResponse!
     
     static var accessToken = ""
 }
 
-extension LoginViewModel {
+extension LoginVM {
     
     func loginCompleted(email: String, password: String) {
     
