@@ -7,6 +7,14 @@
         <key>NSAllowsArbitraryLoads</key>
         <true/>
     </dict>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleIdentifier</key>
+    <string>.class.Idea-Archive</string>
+    <key>CFBundleExecutable</key>
+    <string>Idea_Archive</string>
     <key>UIAppFonts</key>
     <array>
         <string>Pretendard-Bold.otf</string>
