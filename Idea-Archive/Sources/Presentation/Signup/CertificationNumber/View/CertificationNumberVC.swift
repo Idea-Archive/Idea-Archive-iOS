@@ -93,7 +93,7 @@ final class CertificationNumberVC: BaseVC {
     
 }
 
-extension CertificationNumberVC: AEOTPTextFieldDelegate, UITextFieldDelegate {
+extension CertificationNumberVC: AEOTPTextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
