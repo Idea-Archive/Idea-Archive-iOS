@@ -124,7 +124,7 @@ final class LoginVC: BaseVC {
     
     override func setLayout(){
         self.loginLabel.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.11)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.06)
             $0.centerX.equalToSuperview()
         }
         self.textFieldStackView.snp.makeConstraints {

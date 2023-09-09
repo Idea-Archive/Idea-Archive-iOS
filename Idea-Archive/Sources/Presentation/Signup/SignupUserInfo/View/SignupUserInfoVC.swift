@@ -62,7 +62,7 @@ final class SignupVC: BaseVC {
     
     override func setLayout(){
         self.signupLabel.snp.makeConstraints{
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.11)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.06)
             $0.centerX.equalTo(view.snp.centerX)
         }
         self.nameTextField.snp.makeConstraints{

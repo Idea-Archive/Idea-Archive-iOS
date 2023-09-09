@@ -39,7 +39,7 @@ final class FailAuthVC: BaseVC {
     
     override func setLayout(){
         failAuthorizeImage.snp.makeConstraints{
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(102)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.14)
             $0.centerX.equalTo(view.snp.centerX)
         }
         failAuthorizeLabel.snp.makeConstraints{
@@ -52,7 +52,7 @@ final class FailAuthVC: BaseVC {
         }
         goBackToLoginButton.snp.makeConstraints{
             $0.height.equalTo(52)
-            $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(18)
+            $0.bottom.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.03)
             $0.leading.trailing.equalTo(self.view).inset(28)
         }
     }
