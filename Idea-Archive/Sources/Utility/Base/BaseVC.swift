@@ -3,7 +3,7 @@ import Moya
 
 class BaseVC: UIViewController {
     // MARK: - Properties
-    let bounds = UIScreen().bounds
+    let bound = UIScreen.main.bounds
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,6 @@ class BaseVC: UIViewController {
             self.view.backgroundColor = .white
         }
     }
-    
     
     func addView() {}
     func setup() {}

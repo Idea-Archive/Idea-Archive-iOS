@@ -124,8 +124,8 @@ final class LoginVC: BaseVC {
     
     override func setLayout(){
         self.loginLabel.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(52)
-            $0.centerX.equalTo(view.snp.centerX)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.06)
+            $0.centerX.equalToSuperview()
         }
         self.textFieldStackView.snp.makeConstraints {
             $0.height.equalTo(116)
@@ -149,12 +149,11 @@ final class LoginVC: BaseVC {
         self.loginButton.snp.makeConstraints {
             $0.height.equalTo(52)
             $0.top.equalTo(passwordTextField.snp.bottom).offset(48)
-            $0.leading.equalTo(self.view).offset(24)
-            $0.centerX.equalTo(view.snp.centerX)
+            $0.leading.trailing.equalToSuperview().inset(24)
         }
         self.socialLoginButtonStackView.snp.makeConstraints {
             $0.height.equalTo(36)
-            $0.bottom.equalToSuperview().inset(96)
+            $0.bottom.equalToSuperview().inset(bound.height * 0.07)
             $0.centerX.equalToSuperview()
         }
         self.appleLoginButton.snp.makeConstraints{
@@ -214,4 +213,3 @@ extension LoginVC: UITextFieldDelegate{
         }
     }
 }
-

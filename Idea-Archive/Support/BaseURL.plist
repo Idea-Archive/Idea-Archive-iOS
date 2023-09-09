@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>Base-API-KEY</key>
-	<string>https://ia-alb-1944207904.ap-northeast-2.elb.amazonaws.com/</string>
+	<string>https://port-0-idea-archive-server-jvvy2blm47cjwc.sel5.cloudtype.app/</string>
 </dict>
 </plist>

@@ -54,7 +54,7 @@ final class CertificationNumberVC: BaseVC {
     
     override func setLayout() {
         self.certificationNoticeLabel.snp.makeConstraints{
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(40)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(bound.height * 0.04)
             $0.leading.equalTo(self.view).offset(40)
         }
         self.sentCertificationLabel.snp.makeConstraints{
@@ -93,7 +93,7 @@ final class CertificationNumberVC: BaseVC {
     
 }
 
-extension CertificationNumberVC: AEOTPTextFieldDelegate, UITextFieldDelegate {
+extension CertificationNumberVC: AEOTPTextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

@@ -35,7 +35,7 @@ final class SuccessAuthVC: BaseVC {
     
     override func setLayout(){
         self.successImage.snp.makeConstraints{
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(102)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.14)
             $0.centerX.equalTo(view.snp.centerX)
         }
         self.successAuthorizeLabel.snp.makeConstraints{

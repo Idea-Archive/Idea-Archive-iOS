@@ -14,7 +14,7 @@ final class MainVC: BaseVC {
         $0.showsVerticalScrollIndicator = true
         $0.contentInset = .zero
         $0.clipsToBounds = true
-        $0.register(MainCell.self, forCellWithReuseIdentifier: "MainCell")
+        $0.register(MajorCollectionViewCell.self, forCellWithReuseIdentifier: "MainCell")
         $0.backgroundColor = .clear
     }
     
@@ -153,7 +153,7 @@ extension MainVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCell.id, for: indexPath) as! MainCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MajorCollectionViewCell.id, for: indexPath) as! MajorCollectionViewCell
         
         cell.majorSelectButton.setTitle(majors[indexPath.item], for: .normal)
         

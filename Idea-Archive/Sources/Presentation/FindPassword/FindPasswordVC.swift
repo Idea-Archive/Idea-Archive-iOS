@@ -40,7 +40,7 @@ final class FindPasswordVC: BaseVC {
     
     override func setLayout(){
         self.changePasswordLabel.snp.makeConstraints{
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(32)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(bound.height * 0.04)
             $0.leading.equalTo(self.view).offset(28)
         }
         self.idTextField.snp.makeConstraints{
