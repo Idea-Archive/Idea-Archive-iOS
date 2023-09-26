@@ -5,7 +5,7 @@ final class MainVC: BaseVC {
     
     private let flowLayout = UICollectionViewFlowLayout().then {
         $0.scrollDirection = .horizontal
-        $0.minimumInteritemSpacing = 8.0
+        $0.minimumLineSpacing = 8.0
     }
     
     private lazy var majorcollectionView = UICollectionView(frame: .zero, collectionViewLayout: self.flowLayout).then {
@@ -14,7 +14,7 @@ final class MainVC: BaseVC {
         $0.showsVerticalScrollIndicator = true
         $0.contentInset = .zero
         $0.clipsToBounds = true
-        $0.register(MajorCollectionViewCell.self, forCellWithReuseIdentifier: "MainCell")
+        $0.register(MajorCollectionViewCell.self, forCellWithReuseIdentifier: MajorCollectionViewCell.id)
         $0.backgroundColor = .clear
     }
     
@@ -100,38 +100,45 @@ final class MainVC: BaseVC {
     
     // MARK: - UI
     override func addView() {
-        view.addSubviews(categoryStackView, settingStackView,newWritingButton,postListLabel, mainTableView)
+        view.addSubviews(categoryStackView,
+                         settingStackView,
+                         newWritingButton,
+                         postListLabel,
+                         mainTableView
+        )
         
         mainTableView.addSubviews(mainHeaderView, newWritingButton)
-        
+
         mainHeaderView.addSubviews(postListLabel, majorcollectionView)
         
-        [entireCategoryButton, ideaCategoryButton, feedbackCategoryButton, jobOpeningCategoryButton].forEach {
+        [entireCategoryButton,
+         ideaCategoryButton,
+         feedbackCategoryButton,
+         jobOpeningCategoryButton].forEach {
             categoryStackView.addArrangedSubview($0)
         }
         
-        [searchButton, myPageButton].forEach{
+        [searchButton,
+         myPageButton].forEach{
             settingStackView.addArrangedSubview($0)
         }
     }
     
     override func setLayout() {
         mainTableView.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).inset(16)
-            $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            $0.leading.trailing.top.equalTo(self.view.safeAreaLayoutGuide)
             $0.bottom.equalToSuperview()
         }
         
         mainHeaderView.snp.makeConstraints{
-            $0.top.equalTo(mainTableView.safeAreaLayoutGuide).inset(4)
+            $0.top.equalTo(mainTableView.safeAreaLayoutGuide)
             $0.leading.trailing.equalTo(mainTableView.safeAreaLayoutGuide)
-            $0.height.equalTo(54)
+            $0.height.equalTo(84)
         }
         
         majorcollectionView.snp.makeConstraints {
-            $0.top.trailing.equalTo(mainHeaderView.safeAreaLayoutGuide)
-            $0.leading.equalTo(mainHeaderView.safeAreaLayoutGuide).inset(20)
-            $0.height.equalTo(20)
+            $0.top.trailing.leading.equalToSuperview()
+            $0.height.equalTo(52)
         }
         
         postListLabel.snp.makeConstraints {
@@ -147,17 +154,22 @@ final class MainVC: BaseVC {
     }
 }
 
-extension MainVC: UICollectionViewDataSource {
+extension MainVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return majors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MajorCollectionViewCell.id, for: indexPath) as! MajorCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MajorCollectionViewCell
         
-        cell.majorSelectButton.setTitle(majors[indexPath.item], for: .normal)
+        cell.majorSelectLabel.text = majors[indexPath.item]
         
         return cell
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width
+        
+        return CGSize(width: width, height: 32)
+    }
 }

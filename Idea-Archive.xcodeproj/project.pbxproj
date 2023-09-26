@@ -23,7 +23,6 @@
 		36BCC8179EA86D5CC527B6C1 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44B5313C6E6CEFB58133E892 /* Pretendard-ExtraBold.otf */; };
 		37F5A5992FA38BD487D8A5EB /* SignupUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E9F3F3C7393B4B295D4077 /* SignupUserInfoVC.swift */; };
 		3A91859F1A400EF47304BB51 /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2DE0D399848C0CAB4EE4C5 /* NormalTextField.swift */; };
-		3D85F90A249699A8AECBA4DA /* MajorCollectionViewiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED092B09E8169D8BBB5BD030 /* MajorCollectionViewiCell.swift */; };
 		40704C786EC80DA9FB823945 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9B7AD0F71BE13A28CF5D856C /* Pretendard-Light.otf */; };
 		4E5A055CC3F7CE41B9473134 /* MakeNewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34722F32AFE7CD019C340165 /* MakeNewPasswordVC.swift */; };
 		4E9363FBA3D5BA51D021373C /* SmallTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D9015CD9416720514AF48D /* SmallTitleLabel.swift */; };
@@ -37,10 +36,10 @@
 		7D2D7D3701E1447415751A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F6E351BE5FF50D2A61F09A /* AppDelegate.swift */; };
 		7F93E95314ED79137F496B0F /* AEOTPTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 152B14AB42E4A4AA0CDE1871 /* AEOTPTextField */; };
 		817ACF71D5899F99641B9AEB /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5399DEA07746F878F754349B /* AuthServices.swift */; };
-		82FCA19A2991498115F77AFB /* IQKeyboardManager in Frameworks */ = {isa = PBXBuildFile; productRef = 1057B31C4989939DA00BF7A0 /* IQKeyboardManager */; };
+		82EFB989D96E45AC0CD20447 /* MajorCollectionViewiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E8F1921AE814CA7CC394C9 /* MajorCollectionViewiCell.swift */; };
+		82FCA19A2991498115F77AFB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6A958B74F9BBB754FAA3B358 /* IQKeyboardManagerSwift */; };
 		841937DD459FEE8EEF5C5498 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC93BFFA0E1F7685F4A35C30 /* SnapKit */; };
 		8ED6DA05FEBBECF07A7EA370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A35CAAA3B02ADB95AA8D18 /* Assets.xcassets */; };
-		A1E0B856A224EE532B508C64 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99555CBDE37A64EA301AC6 /* LoginViewModel.swift */; };
 		A49CFB6814F9AB05D489F77D /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = D09D6D01F8C7EFA0ACEC3355 /* RxKeyboard */; };
 		A67C578D893D78740E935D44 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BFEB1A2D488683E2F29ADF4B /* Pretendard-Bold.otf */; };
 		AF527DED6310CF5E4CA7B3AE /* NextStepButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5151FB4DB77807786B675 /* NextStepButton.swift */; };
@@ -54,9 +53,11 @@
 		CA51E464115C8BF35C4E9E3F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEF179A8950045E9D3CD1C /* LoginVC.swift */; };
 		CA54AC8D2B8CFCBFD2BCFFF3 /* UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC3A37BEFE935E025A8FEF /* UITextFieldDelegate.swift */; };
 		CBEC86B98A1C798DA08A82D5 /* LargeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */; };
+		D0CCC9762AC03A9200EE9F64 /* MajorsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */; };
 		D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */; };
 		D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */; };
 		D5F4766131D651BDF3B6EC6B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1E220EBDBCC0364F59C428C7 /* Moya */; };
+		D8D90E57F07337F279903419 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A05028CE6DB81CF58813474 /* LoginVM.swift */; };
 		E64B156484623581A978A530 /* CertificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D4EBF31FD543166451777 /* CertificationVM.swift */; };
 		E6CB3F0D72B4DC1F316E17A9 /* EmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7EFED76D76AD88738160E1 /* EmailRequest.swift */; };
 		E95C2B904656809BD18FB855 /* TuistBundle+IdeaArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37DE8244F06D77EAFCD152 /* TuistBundle+IdeaArchive.swift */; };
@@ -98,6 +99,8 @@
 		6C67D51A8D9E5CA6CD063DB3 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		6D7EFED76D76AD88738160E1 /* EmailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRequest.swift; sourceTree = "<group>"; };
 		73A35CAAA3B02ADB95AA8D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75E8F1921AE814CA7CC394C9 /* MajorCollectionViewiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorCollectionViewiCell.swift; sourceTree = "<group>"; };
+		7A05028CE6DB81CF58813474 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		7D6372A217C2D1BA1CDD0ECF /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		84A5151FB4DB77807786B675 /* NextStepButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStepButton.swift; sourceTree = "<group>"; };
 		866E4DD49CF8C83045128727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,11 +126,10 @@
 		C60F85C8DA8F61E5BD0F78E4 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		CB8B69C18E22337FE4143926 /* EmailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailServices.swift; sourceTree = "<group>"; };
 		CFAE1310808C22597CB4F67E /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorsLabel.swift; sourceTree = "<group>"; };
 		E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordVC.swift; sourceTree = "<group>"; };
 		EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
-		ED092B09E8169D8BBB5BD030 /* MajorCollectionViewiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorCollectionViewiCell.swift; sourceTree = "<group>"; };
 		EFAC875880F977FD4BA5DBB3 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
-		FA99555CBDE37A64EA301AC6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FC2DE0D399848C0CAB4EE4C5 /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
 		FE64FC15E1DF942F6E2731A3 /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
 		FF53AA69729EAB96614CC44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -138,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82FCA19A2991498115F77AFB /* IQKeyboardManager in Frameworks */,
+				82FCA19A2991498115F77AFB /* IQKeyboardManagerSwift in Frameworks */,
 				841937DD459FEE8EEF5C5498 /* SnapKit in Frameworks */,
 				D5F4766131D651BDF3B6EC6B /* Moya in Frameworks */,
 				A49CFB6814F9AB05D489F77D /* RxKeyboard in Frameworks */,
@@ -205,7 +207,7 @@
 		1F2837C23E3254221546C301 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FA99555CBDE37A64EA301AC6 /* LoginViewModel.swift */,
+				7A05028CE6DB81CF58813474 /* LoginVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,7 +283,7 @@
 		4AC07AB136D46B01DD72BE5C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				ED092B09E8169D8BBB5BD030 /* MajorCollectionViewiCell.swift */,
+				75E8F1921AE814CA7CC394C9 /* MajorCollectionViewiCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -460,6 +462,7 @@
 		B4A985FF6121F5D179216AA6 /* Label */ = {
 			isa = PBXGroup;
 			children = (
+				D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */,
 				8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */,
 				C2D9015CD9416720514AF48D /* SmallTitleLabel.swift */,
 				B95643DF198C9A1858A872C6 /* TitleLabel.swift */,
@@ -529,6 +532,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D0CCC9742AC03A6F00EE9F64 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		DB47A17ADBBAA0A70B91629A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +567,7 @@
 		E631DD33EC05E0A0A9963326 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D0CCC9742AC03A6F00EE9F64 /* UILabel */,
 				8DFA218B745393B562B4E3B6 /* Base */,
 				DFAB5F831C345705326A4E6E /* Extension */,
 				03E48A9A1452F0CBC4848A6E /* UIButton */,
@@ -666,7 +677,7 @@
 			);
 			name = "Idea-Archive";
 			packageProductDependencies = (
-				1057B31C4989939DA00BF7A0 /* IQKeyboardManager */,
+				6A958B74F9BBB754FAA3B358 /* IQKeyboardManagerSwift */,
 				EC93BFFA0E1F7685F4A35C30 /* SnapKit */,
 				1E220EBDBCC0364F59C428C7 /* Moya */,
 				D09D6D01F8C7EFA0ACEC3355 /* RxKeyboard */,
@@ -684,7 +695,6 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Idea-Archive-iOS";
 			};
 			buildConfigurationList = 7E12E7F20B1CE61D109D7689 /* Build configuration list for PBXProject "Idea-Archive" */;
@@ -762,8 +772,8 @@
 				128199D54D451BF24D0ADD33 /* SecureTextField.swift in Sources */,
 				74C9356166163F1CF9968547 /* FindPasswordVC.swift in Sources */,
 				CA51E464115C8BF35C4E9E3F /* LoginVC.swift in Sources */,
-				A1E0B856A224EE532B508C64 /* LoginViewModel.swift in Sources */,
-				3D85F90A249699A8AECBA4DA /* MajorCollectionViewiCell.swift in Sources */,
+				D8D90E57F07337F279903419 /* LoginVM.swift in Sources */,
+				82EFB989D96E45AC0CD20447 /* MajorCollectionViewiCell.swift in Sources */,
 				08A7A5E542A7157815C5ED30 /* MainVC.swift in Sources */,
 				4E5A055CC3F7CE41B9473134 /* MakeNewPasswordVC.swift in Sources */,
 				4EF9586C567B67B48B6D9123 /* CertificationNumberVC.swift in Sources */,
@@ -771,6 +781,7 @@
 				D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */,
 				6D4BB16AC07F4F4A551E5F86 /* SuccessAuthVC.swift in Sources */,
 				37F5A5992FA38BD487D8A5EB /* SignupUserInfoVC.swift in Sources */,
+				D0CCC9762AC03A9200EE9F64 /* MajorsLabel.swift in Sources */,
 				D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */,
 				67E47DCDE2ACC5DE84C0AC07 /* BaseVC.swift in Sources */,
 				B8586F8CB7531BC497A612AB /* UITextField+setPlaceholderColor.swift in Sources */,
@@ -865,6 +876,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -949,6 +961,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
@@ -1031,10 +1044,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1057B31C4989939DA00BF7A0 /* IQKeyboardManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = IQKeyboardManager;
-		};
 		152B14AB42E4A4AA0CDE1871 /* AEOTPTextField */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AEOTPTextField;
@@ -1042,6 +1051,10 @@
 		1E220EBDBCC0364F59C428C7 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Moya;
+		};
+		6A958B74F9BBB754FAA3B358 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IQKeyboardManagerSwift;
 		};
 		AD4978E1621D96CEA9DBC708 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
