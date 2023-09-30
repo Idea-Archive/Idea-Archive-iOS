@@ -1,6 +1,6 @@
 import Foundation
 
-struct CommentWriteRequest: Codable {
+struct WriteCommentRequest: Codable {
     let Authorization: String
     let postId : String
     let content: String
