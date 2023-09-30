@@ -55,6 +55,7 @@
 		CBEC86B98A1C798DA08A82D5 /* LargeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */; };
 		D049A09E2AC7993B00FE7464 /* WriteArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */; };
 		D049A0A22AC79E0200FE7464 /* VieqDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A0A12AC79E0200FE7464 /* VieqDetailsRequest.swift */; };
+		D049A0A42AC79F8300FE7464 /* ModifyArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A0A32AC79F8300FE7464 /* ModifyArticleRequest.swift */; };
 		D0CCC9762AC03A9200EE9F64 /* MajorsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */; };
 		D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */; };
 		D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */; };
@@ -130,6 +131,7 @@
 		CFAE1310808C22597CB4F67E /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteArticleRequest.swift; sourceTree = "<group>"; };
 		D049A0A12AC79E0200FE7464 /* VieqDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VieqDetailsRequest.swift; sourceTree = "<group>"; };
+		D049A0A32AC79F8300FE7464 /* ModifyArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyArticleRequest.swift; sourceTree = "<group>"; };
 		D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorsLabel.swift; sourceTree = "<group>"; };
 		E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordVC.swift; sourceTree = "<group>"; };
 		EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
@@ -558,6 +560,7 @@
 			isa = PBXGroup;
 			children = (
 				D049A0A12AC79E0200FE7464 /* VieqDetailsRequest.swift */,
+				D049A0A32AC79F8300FE7464 /* ModifyArticleRequest.swift */,
 			);
 			path = PostId;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 				25C281BBF1E1D1A57A244015 /* UIColor+HexColor.swift in Sources */,
 				72A4E86EC5CB73B997F06197 /* UIView+addSubviews.swift in Sources */,
 				D049A0A22AC79E0200FE7464 /* VieqDetailsRequest.swift in Sources */,
+				D049A0A42AC79F8300FE7464 /* ModifyArticleRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
