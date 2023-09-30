@@ -53,6 +53,7 @@
 		CA51E464115C8BF35C4E9E3F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EEF179A8950045E9D3CD1C /* LoginVC.swift */; };
 		CA54AC8D2B8CFCBFD2BCFFF3 /* UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC3A37BEFE935E025A8FEF /* UITextFieldDelegate.swift */; };
 		CBEC86B98A1C798DA08A82D5 /* LargeTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB2B675D7476347281A2168 /* LargeTitleLabel.swift */; };
+		D049A09E2AC7993B00FE7464 /* WriteArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */; };
 		D0CCC9762AC03A9200EE9F64 /* MajorsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */; };
 		D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */; };
 		D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */; };
@@ -126,6 +127,7 @@
 		C60F85C8DA8F61E5BD0F78E4 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		CB8B69C18E22337FE4143926 /* EmailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailServices.swift; sourceTree = "<group>"; };
 		CFAE1310808C22597CB4F67E /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteArticleRequest.swift; sourceTree = "<group>"; };
 		D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorsLabel.swift; sourceTree = "<group>"; };
 		E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordVC.swift; sourceTree = "<group>"; };
 		EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 		775E3E0D73AD887F29640162 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				D049A09C2AC7991F00FE7464 /* Post */,
 				EC164B65AEDFC2F2E9AB2B46 /* Auth */,
 				F9260E010A7B8260B3067BAE /* Email */,
 			);
@@ -530,6 +533,30 @@
 				1249A10B02AA8081E66034B3 /* Launch */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D049A09C2AC7991F00FE7464 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				D049A0A02AC79A9500FE7464 /* PostId */,
+				D049A09F2AC79A3400FE7464 /* Write */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		D049A09F2AC79A3400FE7464 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		D049A0A02AC79A9500FE7464 /* PostId */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostId;
 			sourceTree = "<group>";
 		};
 		D0CCC9742AC03A6F00EE9F64 /* UILabel */ = {
@@ -758,6 +785,7 @@
 				B3A3ACBE9021B2694BD5FC62 /* KeyChainManager.swift in Sources */,
 				2E8905AC9404DA68562E4733 /* AuthRequest.swift in Sources */,
 				E6CB3F0D72B4DC1F316E17A9 /* EmailRequest.swift in Sources */,
+				D049A09E2AC7993B00FE7464 /* WriteArticleRequest.swift in Sources */,
 				817ACF71D5899F99641B9AEB /* AuthServices.swift in Sources */,
 				0383CACF33FBBA9153E2BDE4 /* EmailServices.swift in Sources */,
 				237410E00186E0107C7214FE /* AdditionalButton.swift in Sources */,
