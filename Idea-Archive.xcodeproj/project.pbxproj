@@ -56,6 +56,7 @@
 		D049A09E2AC7993B00FE7464 /* WriteArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */; };
 		D049A0A22AC79E0200FE7464 /* VieqDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A0A12AC79E0200FE7464 /* VieqDetailsRequest.swift */; };
 		D049A0A42AC79F8300FE7464 /* ModifyArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A0A32AC79F8300FE7464 /* ModifyArticleRequest.swift */; };
+		D049A0A62AC7A0DA00FE7464 /* DeleteArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049A0A52AC7A0DA00FE7464 /* DeleteArticleRequest.swift */; };
 		D0CCC9762AC03A9200EE9F64 /* MajorsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */; };
 		D1C31EB4858EC0D240409248 /* SignupUserInfoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */; };
 		D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDD167FBFFE149E30A824D1 /* FailAuthVC.swift */; };
@@ -132,6 +133,7 @@
 		D049A09D2AC7993B00FE7464 /* WriteArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteArticleRequest.swift; sourceTree = "<group>"; };
 		D049A0A12AC79E0200FE7464 /* VieqDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VieqDetailsRequest.swift; sourceTree = "<group>"; };
 		D049A0A32AC79F8300FE7464 /* ModifyArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyArticleRequest.swift; sourceTree = "<group>"; };
+		D049A0A52AC7A0DA00FE7464 /* DeleteArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteArticleRequest.swift; sourceTree = "<group>"; };
 		D0CCC9752AC03A9200EE9F64 /* MajorsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorsLabel.swift; sourceTree = "<group>"; };
 		E7D212929C1CCFE9EF5B75F0 /* FindPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordVC.swift; sourceTree = "<group>"; };
 		EC252EC944EA77629480B3EC /* SignupUserInfoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserInfoVM.swift; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 			children = (
 				D049A0A12AC79E0200FE7464 /* VieqDetailsRequest.swift */,
 				D049A0A32AC79F8300FE7464 /* ModifyArticleRequest.swift */,
+				D049A0A52AC7A0DA00FE7464 /* DeleteArticleRequest.swift */,
 			);
 			path = PostId;
 			sourceTree = "<group>";
@@ -811,6 +814,7 @@
 				08A7A5E542A7157815C5ED30 /* MainVC.swift in Sources */,
 				4E5A055CC3F7CE41B9473134 /* MakeNewPasswordVC.swift in Sources */,
 				4EF9586C567B67B48B6D9123 /* CertificationNumberVC.swift in Sources */,
+				D049A0A62AC7A0DA00FE7464 /* DeleteArticleRequest.swift in Sources */,
 				E64B156484623581A978A530 /* CertificationVM.swift in Sources */,
 				D3FDAE2EAFD61EE97BA11DAE /* FailAuthVC.swift in Sources */,
 				6D4BB16AC07F4F4A551E5F86 /* SuccessAuthVC.swift in Sources */,
